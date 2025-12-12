@@ -21,7 +21,7 @@ namespace MetalizationSystem.DataCollection
         [SugarColumn(IsPrimaryKey = true)]
         public int ExpID { get; set; } = 0;
         public int Formula { get; set; } = 0;
-        public int Concentration { get; set; } = 0;
+        public double Concentration { get; set; } = 0.0;
         public int Temperature { get; set; } = 0;
         public int SoakTime { get; set; } = 0;
         public double PH { get; set; } = 0.0;
