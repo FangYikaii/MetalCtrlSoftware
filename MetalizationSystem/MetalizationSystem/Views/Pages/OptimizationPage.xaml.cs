@@ -22,16 +22,16 @@ namespace MetalizationSystem.Views.Pages
     public partial class OptimizationPage : UserControl
     {
         private OptimizationPageViewModel viewModel;
-        private DataGridTextColumn formulaColumn;
-        private DataGridTextColumn concentrationColumn;
-        private DataGridTextColumn tempColumn;
-        private DataGridTextColumn soakTimeColumn;
-        private DataGridTextColumn phColumn;
-        private DataGridTextColumn curingTimeColumn;
-        private DataGridTextColumn metalATypeColumn;
-        private DataGridTextColumn metalAConcColumn;
-        private DataGridTextColumn metalBTypeColumn;
-        private DataGridTextColumn metalMolarRatioColumn;
+        private System.Windows.Controls.DataGridTextColumn formulaColumn;
+        private System.Windows.Controls.DataGridTextColumn concentrationColumn;
+        private System.Windows.Controls.DataGridTextColumn tempColumn;
+        private System.Windows.Controls.DataGridTextColumn soakTimeColumn;
+        private System.Windows.Controls.DataGridTextColumn phColumn;
+        private System.Windows.Controls.DataGridTextColumn curingTimeColumn;
+        private System.Windows.Controls.DataGridTextColumn metalATypeColumn;
+        private System.Windows.Controls.DataGridTextColumn metalAConcColumn;
+        private System.Windows.Controls.DataGridTextColumn metalBTypeColumn;
+        private System.Windows.Controls.DataGridTextColumn metalMolarRatioColumn;
 
         public OptimizationPage()
         {
