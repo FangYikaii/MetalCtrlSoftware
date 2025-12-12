@@ -1222,23 +1222,61 @@ public partial class OptimizationPageViewModel : ObservableObject
         string projName = ExistingSelectedProj.ProjName;
 
         // 准备要上传的数据
-        // 准备要上传的数据
+        // 根据当前列的可见性动态包含字段（只包含非隐藏列的数据）
         string expDataJson = await Task.Run(() =>
         {
             var expDataList = new List<Dictionary<string, object>>();
             foreach (var item in BayesExperDataList)
             {
-                var data = new Dictionary<string, object>
-        {
-            { "Formula", item.Formula },
-            { "Concentration", item.Concentration },
-            { "Temperature", item.Temperature },
-            { "SoakTime", item.SoakTime },
-            { "PH", item.PH },
-            { "Coverage", item.Coverage },
-            { "Adhesion", item.Adhesion },
-            { "Uniformity", item.Uniformity }
-        };
+                var data = new Dictionary<string, object>();
+                
+                // 判断当前 item 的 Phase 类型
+                bool isPhase2 = false;
+                bool isPhase1Organic = false;
+                bool isPhase1Oxide = false;
+                
+                if (!string.IsNullOrEmpty(item.Phase))
+                {
+                    string phase = item.Phase.ToLower().Trim();
+                    if (phase.Contains("phase_2"))
+                    {
+                        isPhase2 = true;
+                    }
+                    else if (phase.Contains("phase_1_organic"))
+                    {
+                        isPhase1Organic = true;
+                    }
+                    else if (phase.Contains("phase_1_oxide"))
+                    {
+                        isPhase1Oxide = true;
+                    }
+                }
+                
+                // 始终包含的字段（始终显示的列）
+                data["Coverage"] = item.Coverage;
+                data["Adhesion"] = item.Adhesion;
+                data["Uniformity"] = item.Uniformity;
+                
+                // 根据 Phase 决定是否包含 Organic 列（Formula, Concentration, Temperature, SoakTime, PH, CuringTime）
+                if (isPhase2 || isPhase1Organic)
+                {
+                    data["Formula"] = item.Formula;
+                    data["Concentration"] = item.Concentration;
+                    data["Temperature"] = item.Temperature;
+                    data["SoakTime"] = item.SoakTime;
+                    data["PH"] = item.PH;
+                    data["CuringTime"] = item.CuringTime;
+                }
+                
+                // 根据 Phase 决定是否包含 Oxide 列（MetalAType, MetalAConc, MetalBType, MetalMolarRatio）
+                if (isPhase2 || isPhase1Oxide)
+                {
+                    data["MetalAType"] = item.MetalAType;
+                    data["MetalAConc"] = item.MetalAConc;
+                    data["MetalBType"] = item.MetalBType;
+                    data["MetalMolarRatio"] = item.MetalMolarRatio;
+                }
+                
                 expDataList.Add(data);
             }
             return JsonConvert.SerializeObject(expDataList);
