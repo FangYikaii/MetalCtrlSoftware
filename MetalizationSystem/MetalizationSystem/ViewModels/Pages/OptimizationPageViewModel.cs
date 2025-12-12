@@ -839,6 +839,7 @@ public partial class OptimizationPageViewModel : ObservableObject
             var window = new Window();
             ExpData expData = new ExpData(BayesSelectedItem);
             expData.AdhensionEvent += my_AdhensionEvent;
+            expData.CoverageUniformityEvent += my_CoverageUniformityEvent;
             window.Content = expData;
             window.Width = 1000;
             window.Height = 700;
@@ -879,6 +880,44 @@ public partial class OptimizationPageViewModel : ObservableObject
             }
         }
 
+
+        Status status = Status.SubmitAdhensionValue;
+        LblStatus = $"Status:" + status.GetDescription();
+        BthEnableRefresh();
+    }
+
+    /// <summary>
+    /// Coverage Uniformity Event Handler
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="arge"></param>
+    void my_CoverageUniformityEvent(object sender, CoverageUniformityEventArges arge)
+    {
+        CoverageUniformityData test = arge.value;
+        List<BayesExperData> list = mOperation.GetInfo<BayesExperData>(x => x.ProjName == ExistingSelectedProj.ProjName && x.IterId == ExistingSelectedProj.DownloadId && x.ExpID == test.expID);
+        list[0].Coverage = test.Coverage;
+        list[0].Uniformity = test.Uniformity;
+        list[0].DataCheck = true;
+        bool dbResult = mOperation.UpdateInfo(list, x => new { x.Coverage, x.Uniformity, x.DataCheck });
+        if (dbResult)
+        {
+            MessageBox.Show("Save Coverage and Uniformity values success!", "Info", MessageBoxButton.OK, MessageBoxImage.Information);
+        }
+
+        BayesExperDataList.Clear();
+        list = mOperation.GetInfo<BayesExperData>(x => x.ProjName == ExistingSelectedProj.ProjName && x.IterId == ExistingSelectedProj.DownloadId);
+        foreach (var item in list)
+        {
+            BayesExperDataList.Add(item);
+        }
+        UpdateColumnVisibility();
+        if (sender is ExpData expData)
+        {
+            if (expData.Tag is Window parentWindow)
+            {
+                parentWindow.Close();
+            }
+        }
 
         Status status = Status.SubmitAdhensionValue;
         LblStatus = $"Status:" + status.GetDescription();

@@ -34,6 +34,22 @@ namespace MetalizationSystem.Views.UC
         }
     }
 
+    public class CoverageUniformityData
+    {
+        public int expID { get; set; } = 0;
+        public double Coverage { get; set; } = 0.0;
+        public double Uniformity { get; set; } = 0.0;
+    }
+
+    public class CoverageUniformityEventArges : EventArgs
+    {
+        public CoverageUniformityData value;
+        public CoverageUniformityEventArges(CoverageUniformityData v)
+        {
+            value = v;
+        }
+    }
+
     /// <summary>
     /// ExpData.xaml 的交互逻辑
     /// </summary>
@@ -47,6 +63,16 @@ namespace MetalizationSystem.Views.UC
             if (AdhensionEvent != null)
             {
                 AdhensionEvent(this, e);
+            }
+        }
+
+        public delegate void CoverageUniformityEventHandler(object sender, CoverageUniformityEventArges arge);
+        public event CoverageUniformityEventHandler CoverageUniformityEvent;
+        protected virtual void OnCoverageUniformityEvent(CoverageUniformityEventArges e)
+        {
+            if (CoverageUniformityEvent != null)
+            {
+                CoverageUniformityEvent(this, e);
             }
         }
 
@@ -89,6 +115,54 @@ namespace MetalizationSystem.Views.UC
                 Debug.WriteLine("WriteAdhension error: " + ex.Message);
             }
 
+        }
+
+        private void btn_CoverageUniformity_Click(object sender, RoutedEventArgs e)
+        {
+            var result = MessageBox.Show("Does the coverage and uniformity values been completed?", "Inform", MessageBoxButton.YesNo, MessageBoxImage.Information);
+            if (result == MessageBoxResult.No)
+            {
+                return;
+            }
+            try
+            {
+                CoverageUniformityData value = new CoverageUniformityData();
+                value.expID = int.Parse((DataContext as ExpDataViewModel).ExpId.Trim());
+                
+                // 从 TextBox 读取 Coverage 并转换为数值
+                string coverageText = (DataContext as ExpDataViewModel).Coverage?.Trim();
+                if (string.IsNullOrEmpty(coverageText))
+                {
+                    MessageBox.Show("Please enter coverage value!", "Warning", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    return;
+                }
+                if (!double.TryParse(coverageText, out double coverageValue))
+                {
+                    MessageBox.Show("Please enter a valid numeric value for coverage!", "Warning", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    return;
+                }
+                value.Coverage = coverageValue;
+
+                // 从 TextBox 读取 Uniformity 并转换为数值
+                string uniformityText = (DataContext as ExpDataViewModel).Uniformity?.Trim();
+                if (string.IsNullOrEmpty(uniformityText))
+                {
+                    MessageBox.Show("Please enter uniformity value!", "Warning", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    return;
+                }
+                if (!double.TryParse(uniformityText, out double uniformityValue))
+                {
+                    MessageBox.Show("Please enter a valid numeric value for uniformity!", "Warning", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    return;
+                }
+                value.Uniformity = uniformityValue;
+
+                OnCoverageUniformityEvent(new CoverageUniformityEventArges(value));
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine("WriteCoverageUniformity error: " + ex.Message);
+            }
         }
 
 

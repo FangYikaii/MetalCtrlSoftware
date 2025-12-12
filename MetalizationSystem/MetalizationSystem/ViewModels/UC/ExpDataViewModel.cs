@@ -85,6 +85,9 @@ public partial class ExpDataViewModel : ObservableObject
         PH = data.PH.ToString();
         // 初始化 AdhensionValue，如果已有值则显示数值，否则默认为空
         AdhensionValue = data.Adhesion != 0.0 ? data.Adhesion.ToString() : "";
+        // 从 BayesExperData 读取 Coverage 和 Uniformity
+        Coverage = data.Coverage != 0.0 ? data.Coverage.ToString() : "";
+        Uniformity = data.Uniformity != 0.0 ? data.Uniformity.ToString() : "";
 
         mOperation = new CommonDbOperation(new CommonDbConnectionInfo()
         {
@@ -107,7 +110,7 @@ public partial class ExpDataViewModel : ObservableObject
         {
             MessageBox.Show("Formula data error, please check formula DB!", "Warning", MessageBoxButton.OK, MessageBoxImage.Warning);
         }
-        //Update CV Data
+        //Update CV Data (for image paths only)
         CVDataList = new BindingList<Samples>();
         List<Samples> cvlist = mOperation.GetInfo<Samples>(x => x.barCode == data.Barcode);
         foreach (var item in cvlist)
@@ -116,8 +119,15 @@ public partial class ExpDataViewModel : ObservableObject
         }
         if (cvlist.Count == 1)
         {
-            Coverage = cvlist[0].Coverage.ToString();
-            Uniformity = cvlist[0].Uniformity.ToString();
+            // 如果 BayesExperData 中没有 Coverage 和 Uniformity，则从 Samples 读取
+            if (string.IsNullOrEmpty(Coverage))
+            {
+                Coverage = cvlist[0].Coverage.ToString();
+            }
+            if (string.IsNullOrEmpty(Uniformity))
+            {
+                Uniformity = cvlist[0].Uniformity.ToString();
+            }
             CreateTime = cvlist[0].CreatedAt;
             UpdateTime = cvlist[0].UpdatedAt;
             OriginalImagePath = cvlist[0].OriginalImagePath;
