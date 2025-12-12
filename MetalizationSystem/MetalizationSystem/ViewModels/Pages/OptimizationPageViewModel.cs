@@ -976,7 +976,7 @@ public partial class OptimizationPageViewModel : ObservableObject
                         BayesExperDataList.Add(item);
                     }
                     // 如果查询结果为空，可能是数据还未写入，尝试使用IterId查询
-                    if (list.Count == 0)
+                    if (BayesExperDataList.Count == 0)
                     {
                         list = mOperation.GetInfo<BayesExperData>(x => x.ProjName == ExistingSelectedProj.ProjName && x.IterId == ExistingSelectedProj.IterId);
                         foreach (var item in list)
@@ -984,6 +984,7 @@ public partial class OptimizationPageViewModel : ObservableObject
                             BayesExperDataList.Add(item);
                         }
                     }
+                    // 确保在数据加载后更新列的可见性
                     UpdateColumnVisibility();
 
                     CurrentDisplaytIterId = ExistingSelectedProj.DownloadId;

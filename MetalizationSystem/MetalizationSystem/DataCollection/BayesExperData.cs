@@ -11,12 +11,16 @@ namespace MetalizationSystem.DataCollection
 {
     public class BayesExperData
     {
-        [SugarColumn(IsIdentity = true, IsPrimaryKey = true)]
+        // 注意：数据库表的主键是 ExpID, IterId, Phase（复合主键），不是 Id
+        // 保留 Id 属性但不作为主键，以避免与数据库表结构冲突
         public int Id { get; set; } = 0;
         public string ProjName { get; set; } = "";
 
+        [SugarColumn(IsPrimaryKey = true)]
         public string Phase { get; set; } = "";
+        [SugarColumn(IsPrimaryKey = true)]
         public int IterId { get; set; } = 0;
+        [SugarColumn(IsPrimaryKey = true)]
         public int ExpID { get; set; } = 0;
         public int Formula { get; set; } = 0;
         public int Concentration { get; set; } = 0;
