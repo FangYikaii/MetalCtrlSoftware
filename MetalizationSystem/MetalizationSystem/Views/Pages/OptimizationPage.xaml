@@ -15,6 +15,14 @@
     <UserControl.Resources>
         <ResourceDictionary>
             <locals:ColorConvertBehavior  x:Key="colorConverter"/>
+            <!-- Style for organic columns visibility -->
+            <Style x:Key="OrganicColumnStyle" TargetType="DataGridTextColumn">
+                <Setter Property="Visibility" Value="{Binding DataContext.OrgnicVisibility, RelativeSource={RelativeSource AncestorType=DataGrid}}"/>
+            </Style>
+            <!-- Style for oxide columns visibility -->
+            <Style x:Key="OxideColumnStyle" TargetType="DataGridTextColumn">
+                <Setter Property="Visibility" Value="{Binding DataContext.OxideVisibility, RelativeSource={RelativeSource AncestorType=DataGrid}}"/>
+            </Style>
         </ResourceDictionary>
     </UserControl.Resources>
     <Grid>
@@ -328,16 +336,19 @@ PathData="M842.947458 778.116917 576.847937 512.013303 842.946434 245.883083c8.6
                                 <DataGridTextColumn Header="ExpID" Binding="{ Binding Path = ExpID}"/>
                                 <DataGridTextColumn Header="BarCode" Binding="{ Binding Path = Barcode}"/>
                                 <DataGridTextColumn Header="Phase" Binding="{ Binding Path = Phase}"/>
-                                <DataGridTextColumn Header="Formula" Binding="{ Binding Path = Formula}" Visibility="{Binding DataContext.OrgnicVisibility, ElementName=BayesDataGrid}"/>
-                                <DataGridTextColumn Header="Concentration" Binding="{ Binding Path = Concentration}" Visibility="{Binding DataContext.OrgnicVisibility, ElementName=BayesDataGrid}"/>
-                                <DataGridTextColumn Header="Temp" Binding="{ Binding Path = Temperature}" Visibility="{Binding DataContext.OrgnicVisibility, ElementName=BayesDataGrid}"/>
-                                <DataGridTextColumn Header="SoakTime" Binding="{ Binding Path = SoakTime}" Visibility="{Binding DataContext.OrgnicVisibility, ElementName=BayesDataGrid}"/>
-                                <DataGridTextColumn Header="PH" Binding="{ Binding Path = PH}" Visibility="{Binding DataContext.OrgnicVisibility, ElementName=BayesDataGrid}"/>
-                                <DataGridTextColumn Header="CuringTime" Binding="{ Binding Path = CuringTime}" Visibility="{Binding DataContext.OrgnicVisibility, ElementName=BayesDataGrid}"/>
-                                <DataGridTextColumn Header="MetalAType" Binding="{ Binding Path = MetalAType}" Visibility="{Binding DataContext.OxideVisibility, ElementName=BayesDataGrid}"/>
-                                <DataGridTextColumn Header="MetalAConc" Binding="{ Binding Path = MetalAConc}" Visibility="{Binding DataContext.OxideVisibility, ElementName=BayesDataGrid}"/>
-                                 <DataGridTextColumn Header="MetalBType" Binding="{ Binding Path = MetalBType}" Visibility="{Binding DataContext.OxideVisibility, ElementName=BayesDataGrid}"/>
-                                <DataGridTextColumn Header="MetalMolarRatio" Binding="{ Binding Path = MetalMolarRatio}" Visibility="{Binding DataContext.OxideVisibility, ElementName=BayesDataGrid}"/>
+                                <!-- Organic columns - visibility controlled by code-behind -->
+                                <DataGridTextColumn x:Name="FormulaColumn" Header="Formula" Binding="{ Binding Path = Formula}"/>
+                                <DataGridTextColumn x:Name="ConcentrationColumn" Header="Concentration" Binding="{ Binding Path = Concentration}"/>
+                                <DataGridTextColumn x:Name="TempColumn" Header="Temp" Binding="{ Binding Path = Temperature}"/>
+                                <DataGridTextColumn x:Name="SoakTimeColumn" Header="SoakTime" Binding="{ Binding Path = SoakTime}"/>
+                                <DataGridTextColumn x:Name="PHColumn" Header="PH" Binding="{ Binding Path = PH}"/>
+                                <DataGridTextColumn x:Name="CuringTimeColumn" Header="CuringTime" Binding="{ Binding Path = CuringTime}"/>
+                                <!-- Oxide columns - visibility controlled by code-behind -->
+                                <DataGridTextColumn x:Name="MetalATypeColumn" Header="MetalAType" Binding="{ Binding Path = MetalAType}"/>
+                                <DataGridTextColumn x:Name="MetalAConcColumn" Header="MetalAConc" Binding="{ Binding Path = MetalAConc}"/>
+                                <DataGridTextColumn x:Name="MetalBTypeColumn" Header="MetalBType" Binding="{ Binding Path = MetalBType}"/>
+                                <DataGridTextColumn x:Name="MetalMolarRatioColumn" Header="MetalMolarRatio" Binding="{ Binding Path = MetalMolarRatio}"/>
+                                <!-- Common columns - always visible -->
                                 <DataGridTextColumn Header="Coverage" Binding="{ Binding Path = Coverage}"/>
                                 <DataGridTextColumn Header="Uniformity" Binding="{ Binding Path = Uniformity}"/>
                                 <DataGridTextColumn Header="Adhesion" Binding="{ Binding Path = Adhesion}"/>
