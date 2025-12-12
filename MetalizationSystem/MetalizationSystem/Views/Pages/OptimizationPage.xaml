@@ -330,7 +330,7 @@ PathData="M842.947458 778.116917 576.847937 512.013303 842.946434 245.883083c8.6
                                 <DataGridTextColumn Header="Phase" Binding="{ Binding Path = Phase}"/>
                                 <!-- Organic columns - visibility controlled by code-behind -->
                                 <DataGridTextColumn x:Name="FormulaColumn" Header="Formula" Binding="{ Binding Path = Formula}"/>
-                                <DataGridTextColumn x:Name="ConcentrationColumn" Header="Concentration" Binding="{ Binding Path = Concentration}"/>
+                                <DataGridTextColumn x:Name="ConcentrationColumn" Header="Concentration" Binding="{ Binding Path = Concentration, StringFormat=F1}"/>
                                 <DataGridTextColumn x:Name="TempColumn" Header="Temp" Binding="{ Binding Path = Temperature}"/>
                                 <DataGridTextColumn x:Name="SoakTimeColumn" Header="SoakTime" Binding="{ Binding Path = SoakTime}"/>
                                 <DataGridTextColumn x:Name="PHColumn" Header="PH" Binding="{ Binding Path = PH}"/>
