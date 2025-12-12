@@ -17,6 +17,7 @@ using MetalizationSystem.Views.UC;
 using MetalizationSystem.WorkFlows.Recipe;
 using Newtonsoft.Json;
 using SqlSugar.Extensions;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
@@ -872,11 +873,15 @@ public partial class OptimizationPageViewModel : ObservableObject
             return;
         }
         // 同时更新三个值
-        list[0].Adhesion = test.Adhension;
-        list[0].Coverage = test.Coverage;
-        list[0].Uniformity = test.Uniformity;
-        list[0].DataCheck = true;
-        bool dbResult = mOperation.UpdateInfo(list, x => new { x.Adhesion, x.Coverage, x.Uniformity, x.DataCheck });
+        // 使用 Where 条件明确指定要更新的记录，避免误更新其他数据
+        bool dbResult = UpdateBayesExperDataFields(
+            test.projName, 
+            test.iterId, 
+            test.expID, 
+            test.phase,
+            test.Adhension,
+            test.Coverage,
+            test.Uniformity);
         if (dbResult)
         {
             MessageBox.Show("Save values (Adhesion, Coverage, Uniformity) success!", "Info", MessageBoxButton.OK, MessageBoxImage.Information);
@@ -1756,6 +1761,47 @@ public partial class OptimizationPageViewModel : ObservableObject
                 Umap = ExistingSelectedProj.ProjName + "_" + ExistingSelectedProj.DisplayId.ToString() + "_CoverageUmap.png";
             }
             UmapImagePath = System.IO.Path.Combine(ExistingSelectedProj.SavePath, Umap);
+        }
+    }
+
+    /// <summary>
+    /// 使用 Where 条件明确更新 BayesExperData 的指定字段，避免误更新其他数据
+    /// </summary>
+    private bool UpdateBayesExperDataFields(string projName, int iterId, int expID, string phase, double adhesion, double coverage, double uniformity)
+    {
+        try
+        {
+            // 使用 SqlSugar 的 Where 条件明确指定要更新的记录
+            // 这样可以确保只更新符合条件的一条记录，不会误更新其他数据
+            var db = new SqlSugar.SqlSugarClient(new SqlSugar.ConnectionConfig()
+            {
+                ConnectionString = $"Data Source={Globa.Path.FileAlgoDB};Version=3;",
+                DbType = SqlSugar.DbType.Sqlite,
+                IsAutoCloseConnection = true,
+                InitKeyType = SqlSugar.InitKeyType.Attribute
+            });
+
+            int rowsAffected = db.Updateable<BayesExperData>()
+                .SetColumns(it => new BayesExperData
+                {
+                    Adhesion = adhesion,
+                    Coverage = coverage,
+                    Uniformity = uniformity,
+                    DataCheck = true
+                })
+                .Where(it => it.ProjName == projName && 
+                             it.IterId == iterId && 
+                             it.ExpID == expID && 
+                             it.Phase == phase)
+                .ExecuteCommand();
+
+            db?.Dispose();
+            return rowsAffected > 0;
+        }
+        catch (Exception ex)
+        {
+            Debug.WriteLine($"UpdateBayesExperDataFields error: {ex.Message}");
+            return false;
         }
     }
 
