@@ -281,16 +281,17 @@ public partial class OptimizationPageViewModel : ObservableObject
             if (string.IsNullOrEmpty(item.Phase))
                 continue;
 
-            string phase = item.Phase.ToLower();
-            if (phase == "phase_2")
+            string phase = item.Phase.ToLower().Trim();
+            // 处理可能的前缀，如 "1 phase_1_oxide" -> "phase_1_oxide"
+            if (phase.Contains("phase_2"))
             {
                 hasPhase2 = true;
             }
-            else if (phase == "phase_1_organic")
+            else if (phase.Contains("phase_1_organic"))
             {
                 hasPhase1Organic = true;
             }
-            else if (phase == "phase_1_oxide")
+            else if (phase.Contains("phase_1_oxide"))
             {
                 hasPhase1Oxide = true;
             }
