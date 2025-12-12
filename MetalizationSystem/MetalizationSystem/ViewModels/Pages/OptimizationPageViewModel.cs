@@ -597,12 +597,31 @@ public partial class OptimizationPageViewModel : ObservableObject
             LblStatus = $"Status:" + status.GetDescription();
             //Update experiment param
             BayesExperDataList.Clear();
+            // 查询数据：优先使用DownloadId，如果DownloadId为0则查询所有IterId的数据
             if (ExistingSelectedProj.DownloadId > 0)
             {
                 List<BayesExperData> list = mOperation.GetInfo<BayesExperData>(x => x.ProjName == ExistingSelectedProj.ProjName && x.IterId == ExistingSelectedProj.DownloadId);
                 foreach (var item in list)
                 {
                     BayesExperDataList.Add(item);
+                }
+            }
+            else
+            {
+                // 如果DownloadId为0，尝试查询IterId=1的数据（通常第一次下载的数据）
+                List<BayesExperData> list = mOperation.GetInfo<BayesExperData>(x => x.ProjName == ExistingSelectedProj.ProjName && x.IterId == 1);
+                foreach (var item in list)
+                {
+                    BayesExperDataList.Add(item);
+                }
+                // 如果IterId=1也没有数据，查询所有该项目的可用数据
+                if (BayesExperDataList.Count == 0)
+                {
+                    list = mOperation.GetInfo<BayesExperData>(x => x.ProjName == ExistingSelectedProj.ProjName);
+                    foreach (var item in list)
+                    {
+                        BayesExperDataList.Add(item);
+                    }
                 }
             }
             UpdateColumnVisibility();
