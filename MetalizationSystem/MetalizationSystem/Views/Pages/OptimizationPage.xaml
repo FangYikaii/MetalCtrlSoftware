@@ -334,8 +334,9 @@ PathData="M842.947458 778.116917 576.847937 512.013303 842.946434 245.883083c8.6
                                 <DataGridTextColumn Header="SoakTime" Binding="{ Binding Path = SoakTime}" Visibility="{Binding DataContext.OrgnicVisibility, ElementName=BayesDataGrid}"/>
                                 <DataGridTextColumn Header="PH" Binding="{ Binding Path = PH}" Visibility="{Binding DataContext.OrgnicVisibility, ElementName=BayesDataGrid}"/>
                                 <DataGridTextColumn Header="CuringTime" Binding="{ Binding Path = CuringTime}" Visibility="{Binding DataContext.OrgnicVisibility, ElementName=BayesDataGrid}"/>
+                                <DataGridTextColumn Header="MetalAType" Binding="{ Binding Path = MetalAType}" Visibility="{Binding DataContext.OxideVisibility, ElementName=BayesDataGrid}"/>
                                 <DataGridTextColumn Header="MetalAConc" Binding="{ Binding Path = MetalAConc}" Visibility="{Binding DataContext.OxideVisibility, ElementName=BayesDataGrid}"/>
-                                <DataGridTextColumn Header="MetalBConc" Binding="{ Binding Path = MetalBConc}" Visibility="{Binding DataContext.OxideVisibility, ElementName=BayesDataGrid}"/>
+                                 <DataGridTextColumn Header="MetalBType" Binding="{ Binding Path = MetalBType}" Visibility="{Binding DataContext.OxideVisibility, ElementName=BayesDataGrid}"/>
                                 <DataGridTextColumn Header="MetalMolarRatio" Binding="{ Binding Path = MetalMolarRatio}" Visibility="{Binding DataContext.OxideVisibility, ElementName=BayesDataGrid}"/>
                                 <DataGridTextColumn Header="Coverage" Binding="{ Binding Path = Coverage}"/>
                                 <DataGridTextColumn Header="Uniformity" Binding="{ Binding Path = Uniformity}"/>

@@ -24,8 +24,9 @@ namespace MetalizationSystem.DataCollection
         public int SoakTime { get; set; } = 0;
         public double PH { get; set; } = 0.0;
         public double CuringTime { get; set; } = 0.0;
+        public string MetalAType { get; set; } = "";
+        public string MetalBType { get; set; } = "";
         public double MetalAConc { get; set; } = 0.0;
-        public double MetalBConc { get; set; } = 0.0;
         public double MetalMolarRatio { get; set; } = 0.0;
         public double Coverage { get; set; } = 0.0;
         public double Uniformity { get; set; } = 0.0;

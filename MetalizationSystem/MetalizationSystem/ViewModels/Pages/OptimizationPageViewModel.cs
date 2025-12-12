@@ -255,8 +255,71 @@ public partial class OptimizationPageViewModel : ObservableObject
                 {
                     BayesExperDataList.Add(item);
                 }
+                UpdateColumnVisibility();
             }
         });
+    }
+
+    /// <summary>
+    /// Update Column Visibility based on Phase values in BayesExperDataList
+    /// </summary>
+    private void UpdateColumnVisibility()
+    {
+        if (BayesExperDataList == null || BayesExperDataList.Count == 0)
+        {
+            OrgnicVisibility = Visibility.Hidden;
+            OxideVisibility = Visibility.Hidden;
+            return;
+        }
+
+        bool hasPhase2 = false;
+        bool hasPhase1Organic = false;
+        bool hasPhase1Oxide = false;
+
+        foreach (var item in BayesExperDataList)
+        {
+            if (string.IsNullOrEmpty(item.Phase))
+                continue;
+
+            string phase = item.Phase.ToLower();
+            if (phase == "phase_2")
+            {
+                hasPhase2 = true;
+            }
+            else if (phase == "phase_1_organic")
+            {
+                hasPhase1Organic = true;
+            }
+            else if (phase == "phase_1_oxide")
+            {
+                hasPhase1Oxide = true;
+            }
+        }
+
+        // phase_2 时显示所有列
+        if (hasPhase2)
+        {
+            OrgnicVisibility = Visibility.Visible;
+            OxideVisibility = Visibility.Visible;
+        }
+        // phase_1_oxide 时不显示有机列
+        else if (hasPhase1Oxide)
+        {
+            OrgnicVisibility = Visibility.Hidden;
+            OxideVisibility = Visibility.Visible;
+        }
+        // phase_1_organic 时不显示氧化物列
+        else if (hasPhase1Organic)
+        {
+            OrgnicVisibility = Visibility.Visible;
+            OxideVisibility = Visibility.Hidden;
+        }
+        else
+        {
+            // 默认都隐藏
+            OrgnicVisibility = Visibility.Hidden;
+            OxideVisibility = Visibility.Hidden;
+        }
     }
 
     /// <summary>
@@ -542,6 +605,7 @@ public partial class OptimizationPageViewModel : ObservableObject
                     BayesExperDataList.Add(item);
                 }
             }
+            UpdateColumnVisibility();
             CurrentDisplaytIterId = ExistingSelectedProj.DownloadId;
             BthEnableRefresh();
             PlotLatestDisplayIdData();
@@ -579,6 +643,7 @@ public partial class OptimizationPageViewModel : ObservableObject
 
                 BthEnableRefresh();
                 BayesExperDataList.Clear();
+                UpdateColumnVisibility();
 
                 Status status = Status.UnSelectAlgoProj;
                 LblStatus = $"Status:" + status.GetDescription();
@@ -638,6 +703,7 @@ public partial class OptimizationPageViewModel : ObservableObject
 
                 
                 BayesExperDataList.Clear();
+                UpdateColumnVisibility();
 
                 Status status = Status.DeleteAlgoProj;
                 LblStatus = $"Status:" + status.GetDescription();
@@ -692,6 +758,7 @@ public partial class OptimizationPageViewModel : ObservableObject
                     BayesExperDataList.Add(item);
                 }
             }
+            UpdateColumnVisibility();
             Status status = Status.NextBatchIter;
             LblStatus = $"Status:" + status.GetDescription();
             PlotCurrentDisplayIdData();
@@ -729,6 +796,7 @@ public partial class OptimizationPageViewModel : ObservableObject
                     BayesExperDataList.Add(item);
                 }
             }
+            UpdateColumnVisibility();
             Status status = Status.PrevBatchIter;
             LblStatus = $"Status:" + status.GetDescription();
             PlotCurrentDisplayIdData();
@@ -782,6 +850,7 @@ public partial class OptimizationPageViewModel : ObservableObject
         {
             BayesExperDataList.Add(item);
         }
+        UpdateColumnVisibility();
         if (sender is ExpData expData)
         {
             if (expData.Tag is Window parentWindow)
@@ -904,6 +973,7 @@ public partial class OptimizationPageViewModel : ObservableObject
                     {
                         BayesExperDataList.Add(item);
                     }
+                    UpdateColumnVisibility();
 
                     CurrentDisplaytIterId = ExistingSelectedProj.DownloadId;
                     Status status = Status.DownloadAlgorithm;
@@ -1229,6 +1299,7 @@ public partial class OptimizationPageViewModel : ObservableObject
         {
             BayesExperDataList.Add(item);
         }
+        UpdateColumnVisibility();
         ExistingSelectedProj.ConfigBarCodeId++;
         SelectedProjBarCodeId = ExistingSelectedProj.ConfigBarCodeId.ToString();
         Status status = Status.ConfigBarCodeSuccess;
