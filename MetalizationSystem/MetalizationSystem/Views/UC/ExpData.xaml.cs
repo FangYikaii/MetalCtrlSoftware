@@ -23,6 +23,8 @@ namespace MetalizationSystem.Views.UC
     {
         public int expID { get; set; } = 0;
         public double Adhension { get; set; } = 0.0;
+        public double Coverage { get; set; } = 0.0;
+        public double Uniformity { get; set; } = 0.0;
     }
 
     public class AdhensionEventArges : EventArgs
@@ -34,21 +36,6 @@ namespace MetalizationSystem.Views.UC
         }
     }
 
-    public class CoverageUniformityData
-    {
-        public int expID { get; set; } = 0;
-        public double Coverage { get; set; } = 0.0;
-        public double Uniformity { get; set; } = 0.0;
-    }
-
-    public class CoverageUniformityEventArges : EventArgs
-    {
-        public CoverageUniformityData value;
-        public CoverageUniformityEventArges(CoverageUniformityData v)
-        {
-            value = v;
-        }
-    }
 
     /// <summary>
     /// ExpData.xaml 的交互逻辑
@@ -66,15 +53,6 @@ namespace MetalizationSystem.Views.UC
             }
         }
 
-        public delegate void CoverageUniformityEventHandler(object sender, CoverageUniformityEventArges arge);
-        public event CoverageUniformityEventHandler CoverageUniformityEvent;
-        protected virtual void OnCoverageUniformityEvent(CoverageUniformityEventArges e)
-        {
-            if (CoverageUniformityEvent != null)
-            {
-                CoverageUniformityEvent(this, e);
-            }
-        }
 
         public ExpData(BayesExperData selectedItem)
         {
@@ -85,7 +63,7 @@ namespace MetalizationSystem.Views.UC
 
         private void btn_Adhension_Click(object sender, RoutedEventArgs e)
         {
-            var result = MessageBox.Show("Does the adhension value been completed?", "Inform", MessageBoxButton.YesNo, MessageBoxImage.Information);
+            var result = MessageBox.Show("Does all values (Adhension, Coverage, Uniformity) been completed?", "Inform", MessageBoxButton.YesNo, MessageBoxImage.Information);
             if (result == MessageBoxResult.No)
             {
                 return;
@@ -94,41 +72,21 @@ namespace MetalizationSystem.Views.UC
             {
                 AdensionData value = new AdensionData();
                 value.expID = int.Parse((DataContext as ExpDataViewModel).ExpId.Trim());
-                // 从 TextBox 读取文本并转换为数值
+                
+                // 从 TextBox 读取 Adhension 并转换为数值
                 string adhensionText = (DataContext as ExpDataViewModel).AdhensionValue?.Trim();
                 if (string.IsNullOrEmpty(adhensionText))
                 {
                     MessageBox.Show("Please enter adhension value!", "Warning", MessageBoxButton.OK, MessageBoxImage.Warning);
                     return;
                 }
-                // 尝试解析为数值
                 if (!double.TryParse(adhensionText, out double adhensionValue))
                 {
                     MessageBox.Show("Please enter a valid numeric value for adhension!", "Warning", MessageBoxButton.OK, MessageBoxImage.Warning);
                     return;
                 }
                 value.Adhension = adhensionValue;
-                OnAdhensionEvent(new AdhensionEventArges(value));
-            }
-            catch (Exception ex)
-            {
-                Debug.WriteLine("WriteAdhension error: " + ex.Message);
-            }
 
-        }
-
-        private void btn_CoverageUniformity_Click(object sender, RoutedEventArgs e)
-        {
-            var result = MessageBox.Show("Does the coverage and uniformity values been completed?", "Inform", MessageBoxButton.YesNo, MessageBoxImage.Information);
-            if (result == MessageBoxResult.No)
-            {
-                return;
-            }
-            try
-            {
-                CoverageUniformityData value = new CoverageUniformityData();
-                value.expID = int.Parse((DataContext as ExpDataViewModel).ExpId.Trim());
-                
                 // 从 TextBox 读取 Coverage 并转换为数值
                 string coverageText = (DataContext as ExpDataViewModel).Coverage?.Trim();
                 if (string.IsNullOrEmpty(coverageText))
@@ -157,12 +115,13 @@ namespace MetalizationSystem.Views.UC
                 }
                 value.Uniformity = uniformityValue;
 
-                OnCoverageUniformityEvent(new CoverageUniformityEventArges(value));
+                OnAdhensionEvent(new AdhensionEventArges(value));
             }
             catch (Exception ex)
             {
-                Debug.WriteLine("WriteCoverageUniformity error: " + ex.Message);
+                Debug.WriteLine("WriteValues error: " + ex.Message);
             }
+
         }
 
 
