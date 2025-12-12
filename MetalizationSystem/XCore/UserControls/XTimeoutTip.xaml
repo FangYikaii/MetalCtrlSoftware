@@ -1,0 +1,25 @@
+﻿<Window x:Class="XCore.XTimeoutTip"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:XCore"
+        mc:Ignorable="d"
+        Title="XTimeoutTip" Height="250" Width="400">
+    <Grid Background="Red">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <RichTextBox x:Name="rTbox" Margin="5" />
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Button x:Name="btnContinu" Margin="5" Content="继续" Click="btnContinu_Click" Background="Green"/>
+            <Button x:Name="btnStop" Margin="5" Grid.Column="1" Content="停止" Click="btnStop_Click"/>
+        </Grid>   
+    </Grid>
+</Window>

@@ -1,0 +1,50 @@
+﻿<UserControl x:Class="MetalizationSystem.Views.UC.Plate_UC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MetalizationSystem"
+             mc:Ignorable="d" 
+             d:DesignHeight="50" d:DesignWidth="50">
+    <Grid local:GridLineAttach.Use="True">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Label Name="Cave1" Grid.Row="0" Grid.Column="0" Content="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="8"/>
+        <Label Name="Cave2" Grid.Row="0" Grid.Column="1" Content="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="8"/>
+        <Label Name="Cave3" Grid.Row="0" Grid.Column="2" Content="3" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="8"/>
+        <Label Name="Cave4" Grid.Row="0" Grid.Column="3" Content="4" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="8"/>
+        <Label Name="Cave5" Grid.Row="0" Grid.Column="4" Content="5" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="8"/>
+        <Label Name="Cave6" Grid.Row="1" Grid.Column="0" Content="6" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="8"/>
+        <Label Name="Cave7" Grid.Row="1" Grid.Column="1" Content="7" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="8"/>
+        <Label Name="Cave8" Grid.Row="1" Grid.Column="2" Content="8" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="8"/>
+        <Label Name="Cave9" Grid.Row="1" Grid.Column="3" Content="9" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="8"/>
+        <Label Name="Cave10" Grid.Row="1" Grid.Column="4" Content="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="8"/>
+        <Label Name="Cave11" Grid.Row="2" Grid.Column="0" Content="11" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="8"/>
+        <Label Name="Cave12" Grid.Row="2" Grid.Column="1" Content="12" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="8"/>
+        <Label Name="Cave13" Grid.Row="2" Grid.Column="2" Content="13" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="8"/>
+        <Label Name="Cave14" Grid.Row="2" Grid.Column="3" Content="14" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="8"/>
+        <Label Name="Cave15" Grid.Row="2" Grid.Column="4" Content="15" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="8"/>
+        <Label Name="Cave16" Grid.Row="3" Grid.Column="0" Content="16" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="8"/>
+        <Label Name="Cave17" Grid.Row="3" Grid.Column="1" Content="17" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="8"/>
+        <Label Name="Cave18" Grid.Row="3" Grid.Column="2" Content="18" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="8"/>
+        <Label Name="Cave19" Grid.Row="3" Grid.Column="3" Content="19" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="8"/>
+        <Label Name="Cave20" Grid.Row="3" Grid.Column="4" Content="20" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="8"/>
+        <Label Name="Cave21" Grid.Row="4" Grid.Column="0" Content="21" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="8"/>
+        <Label Name="Cave22" Grid.Row="4" Grid.Column="1" Content="22" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="8"/>
+        <Label Name="Cave23" Grid.Row="4" Grid.Column="2" Content="23" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="8"/>
+        <Label Name="Cave24" Grid.Row="4" Grid.Column="3" Content="24" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="8"/>
+        <Label Name="Cave25" Grid.Row="4" Grid.Column="4" Content="25" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="8"/>
+    </Grid>
+</UserControl>

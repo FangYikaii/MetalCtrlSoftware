@@ -1,0 +1,147 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Project\\2025-03-21 金属化\\03 软件资料\\MetalizationSystem 0929\\MetalizationSystem\\MetalizationSystem.csproj": {}
+  },
+  "projects": {
+    "D:\\Project\\2025-03-21 金属化\\03 软件资料\\MetalizationSystem 0929\\DbOperationLibrary\\DbOperationLibrary.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\Project\\2025-03-21 金属化\\03 软件资料\\MetalizationSystem 0929\\DbOperationLibrary\\DbOperationLibrary.csproj",
+        "projectName": "DbOperationLibrary",
+        "projectPath": "D:\\Project\\2025-03-21 金属化\\03 软件资料\\MetalizationSystem 0929\\DbOperationLibrary\\DbOperationLibrary.csproj",
+        "packagesPath": "C:\\Users\\yzfsw\\.nuget\\packages\\",
+        "projectStyle": "PackagesConfig",
+        "UsingMicrosoftNETSdk": false,
+        "configFilePaths": [
+          "C:\\Users\\yzfsw\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "projectReferences": {}
+          }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low"
+        },
+        "packagesConfigPath": "D:\\Project\\2025-03-21 金属化\\03 软件资料\\MetalizationSystem 0929\\DbOperationLibrary\\packages.config"
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    },
+    "D:\\Project\\2025-03-21 金属化\\03 软件资料\\MetalizationSystem 0929\\MetalizationSystem\\MetalizationSystem.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Project\\2025-03-21 金属化\\03 软件资料\\MetalizationSystem 0929\\MetalizationSystem\\MetalizationSystem.csproj",
+        "projectName": "MetalizationSystem",
+        "projectPath": "D:\\Project\\2025-03-21 金属化\\03 软件资料\\MetalizationSystem 0929\\MetalizationSystem\\MetalizationSystem.csproj",
+        "packagesPath": "C:\\Users\\yzfsw\\.nuget\\packages\\",
+        "outputPath": "D:\\Project\\2025-03-21 金属化\\03 软件资料\\MetalizationSystem 0929\\MetalizationSystem\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\yzfsw\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net48"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "targetAlias": "net48",
+            "projectReferences": {
+              "D:\\Project\\2025-03-21 金属化\\03 软件资料\\MetalizationSystem 0929\\DbOperationLibrary\\DbOperationLibrary.csproj": {
+                "projectPath": "D:\\Project\\2025-03-21 金属化\\03 软件资料\\MetalizationSystem 0929\\DbOperationLibrary\\DbOperationLibrary.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net48": {
+          "targetAlias": "net48",
+          "dependencies": {
+            "BluwolfIcons": {
+              "target": "Package",
+              "version": "[1.0.1, )",
+              "noWarn": [
+                "NU1701"
+              ]
+            },
+            "CommunityToolkit.Mvvm": {
+              "target": "Package",
+              "version": "[8.4.0, )"
+            },
+            "Extended.Wpf.Toolkit": {
+              "target": "Package",
+              "version": "[4.7.25103.5738, )"
+            },
+            "Microsoft.Xaml.Behaviors.Wpf": {
+              "target": "Package",
+              "version": "[1.1.135, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "ReactiveUI": {
+              "target": "Package",
+              "version": "[13.2.18, )"
+            },
+            "ShowMeTheXAML": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            },
+            "ShowMeTheXAML.AvalonEdit": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            },
+            "ShowMeTheXAML.MSBuild": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            },
+            "System.Data.SQLite": {
+              "target": "Package",
+              "version": "[1.0.119, )"
+            },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "VirtualizingWrapPanel": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

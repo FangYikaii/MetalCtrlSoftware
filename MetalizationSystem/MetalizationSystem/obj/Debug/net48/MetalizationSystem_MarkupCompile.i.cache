@@ -1,0 +1,20 @@
+﻿MetalizationSystem
+1.0.0.0
+
+winexe
+C#
+.cs
+C:\Users\34236\Desktop\金属化\C#\MetalizationSystem 1212\MetalizationSystem\MetalizationSystem\obj\Debug\net48\
+MetalizationSystem
+none
+false
+TRACE;DEBUG;NETFRAMEWORK;NET48;;NET30_OR_GREATER;NET35_OR_GREATER;NET40_OR_GREATER;NET45_OR_GREATER;NET451_OR_GREATER;NET452_OR_GREATER;NET46_OR_GREATER;NET461_OR_GREATER;NET462_OR_GREATER;NET47_OR_GREATER;NET471_OR_GREATER;NET472_OR_GREATER;NET48_OR_GREATER
+C:\Users\34236\Desktop\金属化\C#\MetalizationSystem 1212\MetalizationSystem\MetalizationSystem\App.xaml
+111-370754407
+
+2311257549449
+72284700399
+Demo\Buttons.xaml;Demo\Cards.xaml;Demo\Chips.xaml;Demo\ColorTool.xaml;Demo\ColorZones.xaml;Demo\ComboBoxes.xaml;Demo\DataGrids.xaml;Demo\Dialogs.xaml;Demo\Domain\DocumentationLinks.xaml;Demo\Domain\Sample4Dialog.xaml;Demo\Domain\SampleDialog.xaml;Demo\Domain\SampleMessageDialog.xaml;Demo\Domain\SampleProgressDialog.xaml;Demo\Drawers.xaml;Demo\Elevation.xaml;Demo\Expander.xaml;Demo\Fields.xaml;Demo\FieldsLineUp.xaml;Demo\GroupBoxes.xaml;Demo\Home.xaml;Demo\IconPack.xaml;Demo\Lists.xaml;Demo\MenusAndToolBars.xaml;Demo\NavigationRail.xaml;Demo\NumericUpDown.xaml;Demo\Palette.xaml;Demo\PaletteSelector.xaml;Demo\Pickers.xaml;Demo\PopupBox.xaml;Demo\Progress.xaml;Demo\RatingBar.xaml;Demo\Sliders.xaml;Demo\SmartHint.xaml;Demo\Snackbars.xaml;Demo\Tabs.xaml;Demo\ThemeSettings.xaml;Demo\Toggles.xaml;Demo\Transitions.xaml;Demo\TransitionsDemo\Slide1_Intro.xaml;Demo\TransitionsDemo\Slide2_Intro.xaml;Demo\TransitionsDemo\Slide3_Intro.xaml;Demo\TransitionsDemo\Slide4_CombineTransitions.xaml;Demo\TransitionsDemo\Slide5_TransitioningContent.xaml;Demo\TransitionsDemo\Slide6_Origins.xaml;Demo\TransitionsDemo\Slide7_MVVM.xaml;Demo\TransitionsDemo\Slide8_Details.xaml;Demo\TransitionsDemo\TransitionsDemoHome.xaml;Demo\Trees.xaml;Demo\Typography.xaml;MainWindow.xaml;Style\ButtonStyle.xaml;Style\CalendarStyle.xaml;Style\CheckBoxStyle.xaml;Style\ColorStyle.xaml;Style\ComboBoxStyle.xaml;Style\ContextMenuStyle.xaml;Style\DataGridStyle.xaml;Style\DatePickerStyle.xaml;Style\DocumentViewerStyle.xaml;Style\ExpanderStyle.xaml;Style\FrameStyle.xaml;Style\GroupBoxStyle.xaml;Style\LabelStyle.xaml;Style\ListBoxStyle.xaml;Style\ListViewStyle.xaml;Style\MenuStyle.xaml;Style\NavigationWindowStyle.xaml;Style\PasswordBoxStyle.xaml;Style\ProgressBarStyle.xaml;Style\RadioButtonStyle.xaml;Style\RepeatButtonStyle.xaml;Style\ScrollBarStyle.xaml;Style\ScrollViewerStyle.xaml;Style\SliderStyle.xaml;Style\StatusBarStyle.xaml;Style\TabControlStyle.xaml;Style\TextBlockStyle.xaml;Style\TextBoxStyle.xaml;Style\ThumbStyle.xaml;Style\ToggleButtonStyle.xaml;Style\ToolBarStyle.xaml;Style\ToolTipStyle.xaml;Style\TreeViewStyle.xaml;Style\WindowStyle.xaml;Views\Pages\DataList.xaml;Views\Pages\GlassPalletCheckWindow.xaml;Views\Pages\IOMonitor.xaml;Views\Pages\OptimizationPage.xaml;Views\Pages\OrderEditing.xaml;Views\Pages\ParameterList.xaml;Views\Pages\ProductionProcess.xaml;Views\Pages\StationDebugging.xaml;Views\Pages\XHome.xaml;Views\Tank40Prompt.xaml;Views\UC\Axis7Uc.xaml;Views\UC\ConfigBarCode.xaml;Views\UC\DryBox_UC.xaml;Views\UC\ExpData.xaml;Views\UC\GlassPallet.xaml;Views\UC\IoInputLab.xaml;Views\UC\IoInputUc.xaml;Views\UC\IoOutputBtn.xaml;Views\UC\IoOutputUc.xaml;Views\UC\LinearMotor_UC.xaml;Views\UC\LiquidDispensing_UC.xaml;Views\UC\Plate_UC.xaml;Views\UC\ReactionTank_UC.xaml;Views\UC\RobotUc.xaml;Views\UC\ToolTip_UC.xaml;Views\UserManagement.xaml;Views\XMessageBox.xaml;
+
+True
+

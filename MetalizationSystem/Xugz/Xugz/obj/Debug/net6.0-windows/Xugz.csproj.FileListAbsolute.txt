@@ -1,0 +1,59 @@
+D:\Project\工程中心\Xugz\Xugz\obj\Debug\net6.0-windows\Xugz.csproj.AssemblyReference.cache
+D:\Project\工程中心\Xugz\Xugz\obj\Debug\net6.0-windows\Xugz.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project\工程中心\Xugz\Xugz\obj\Debug\net6.0-windows\Xugz.AssemblyInfoInputs.cache
+D:\Project\工程中心\Xugz\Xugz\obj\Debug\net6.0-windows\Xugz.AssemblyInfo.cs
+D:\Project\工程中心\Xugz\Xugz\obj\Debug\net6.0-windows\Xugz.csproj.CoreCompileInputs.cache
+D:\Project\工程中心\Xugz\Xugz\bin\Debug\net6.0-windows\Xugz.deps.json
+D:\Project\工程中心\Xugz\Xugz\bin\Debug\net6.0-windows\Xugz.dll
+D:\Project\工程中心\Xugz\Xugz\bin\Debug\net6.0-windows\Xugz.pdb
+D:\Project\工程中心\Xugz\Xugz\obj\Debug\net6.0-windows\Xugz.dll
+D:\Project\工程中心\Xugz\Xugz\obj\Debug\net6.0-windows\refint\Xugz.dll
+D:\Project\工程中心\Xugz\Xugz\obj\Debug\net6.0-windows\Xugz.pdb
+D:\Project\工程中心\Xugz\Xugz\obj\Debug\net6.0-windows\ref\Xugz.dll
+D:\Project\工程中心\Xugz\Xugz\obj\Debug\net6.0-windows\CycleProcessBar.g.cs
+D:\Project\工程中心\Xugz\Xugz\obj\Debug\net6.0-windows\Xugz_MarkupCompile.cache
+D:\Project\工程中心\Xugz\Xugz\obj\Debug\net6.0-windows\Xugz_MarkupCompile.lref
+D:\Project\工程中心\Xugz\Xugz\obj\Debug\net6.0-windows\CycleProcessBar.baml
+D:\Project\工程中心\Xugz\Xugz\obj\Debug\net6.0-windows\Xugz.g.resources
+D:\MetalizationSystem\MetalizationSystem\Xugz\Xugz\bin\Debug\net6.0-windows\Xugz.deps.json
+D:\MetalizationSystem\MetalizationSystem\Xugz\Xugz\bin\Debug\net6.0-windows\Xugz.dll
+D:\MetalizationSystem\MetalizationSystem\Xugz\Xugz\bin\Debug\net6.0-windows\Xugz.pdb
+D:\MetalizationSystem\MetalizationSystem\Xugz\Xugz\obj\Debug\net6.0-windows\Xugz.csproj.AssemblyReference.cache
+D:\MetalizationSystem\MetalizationSystem\Xugz\Xugz\obj\Debug\net6.0-windows\CycleProcessBar.g.cs
+D:\MetalizationSystem\MetalizationSystem\Xugz\Xugz\obj\Debug\net6.0-windows\Xugz_MarkupCompile.cache
+D:\MetalizationSystem\MetalizationSystem\Xugz\Xugz\obj\Debug\net6.0-windows\Xugz_MarkupCompile.lref
+D:\MetalizationSystem\MetalizationSystem\Xugz\Xugz\obj\Debug\net6.0-windows\CycleProcessBar.baml
+D:\MetalizationSystem\MetalizationSystem\Xugz\Xugz\obj\Debug\net6.0-windows\Xugz.g.resources
+D:\MetalizationSystem\MetalizationSystem\Xugz\Xugz\obj\Debug\net6.0-windows\Xugz.GeneratedMSBuildEditorConfig.editorconfig
+D:\MetalizationSystem\MetalizationSystem\Xugz\Xugz\obj\Debug\net6.0-windows\Xugz.AssemblyInfoInputs.cache
+D:\MetalizationSystem\MetalizationSystem\Xugz\Xugz\obj\Debug\net6.0-windows\Xugz.AssemblyInfo.cs
+D:\MetalizationSystem\MetalizationSystem\Xugz\Xugz\obj\Debug\net6.0-windows\Xugz.csproj.CoreCompileInputs.cache
+D:\MetalizationSystem\MetalizationSystem\Xugz\Xugz\obj\Debug\net6.0-windows\Xugz.dll
+D:\MetalizationSystem\MetalizationSystem\Xugz\Xugz\obj\Debug\net6.0-windows\refint\Xugz.dll
+D:\MetalizationSystem\MetalizationSystem\Xugz\Xugz\obj\Debug\net6.0-windows\Xugz.pdb
+D:\MetalizationSystem\MetalizationSystem\Xugz\Xugz\obj\Debug\net6.0-windows\ref\Xugz.dll
+D:\WeChat\WeChat Files\xgz4171\FileStorage\File\2025-03\MetalizationSystem0321\MetalizationSystem\MetalizationSystem\Xugz\Xugz\bin\Debug\net6.0-windows\Xugz.deps.json
+D:\WeChat\WeChat Files\xgz4171\FileStorage\File\2025-03\MetalizationSystem0321\MetalizationSystem\MetalizationSystem\Xugz\Xugz\bin\Debug\net6.0-windows\Xugz.dll
+D:\WeChat\WeChat Files\xgz4171\FileStorage\File\2025-03\MetalizationSystem0321\MetalizationSystem\MetalizationSystem\Xugz\Xugz\bin\Debug\net6.0-windows\Xugz.pdb
+D:\WeChat\WeChat Files\xgz4171\FileStorage\File\2025-03\MetalizationSystem0321\MetalizationSystem\MetalizationSystem\Xugz\Xugz\obj\Debug\net6.0-windows\Xugz.csproj.AssemblyReference.cache
+D:\WeChat\WeChat Files\xgz4171\FileStorage\File\2025-03\MetalizationSystem0321\MetalizationSystem\MetalizationSystem\Xugz\Xugz\obj\Debug\net6.0-windows\CycleProcessBar.g.cs
+D:\WeChat\WeChat Files\xgz4171\FileStorage\File\2025-03\MetalizationSystem0321\MetalizationSystem\MetalizationSystem\Xugz\Xugz\obj\Debug\net6.0-windows\Xugz_MarkupCompile.cache
+D:\WeChat\WeChat Files\xgz4171\FileStorage\File\2025-03\MetalizationSystem0321\MetalizationSystem\MetalizationSystem\Xugz\Xugz\obj\Debug\net6.0-windows\Xugz_MarkupCompile.lref
+D:\WeChat\WeChat Files\xgz4171\FileStorage\File\2025-03\MetalizationSystem0321\MetalizationSystem\MetalizationSystem\Xugz\Xugz\obj\Debug\net6.0-windows\CycleProcessBar.baml
+D:\WeChat\WeChat Files\xgz4171\FileStorage\File\2025-03\MetalizationSystem0321\MetalizationSystem\MetalizationSystem\Xugz\Xugz\obj\Debug\net6.0-windows\Xugz.g.resources
+D:\WeChat\WeChat Files\xgz4171\FileStorage\File\2025-03\MetalizationSystem0321\MetalizationSystem\MetalizationSystem\Xugz\Xugz\obj\Debug\net6.0-windows\Xugz.GeneratedMSBuildEditorConfig.editorconfig
+D:\WeChat\WeChat Files\xgz4171\FileStorage\File\2025-03\MetalizationSystem0321\MetalizationSystem\MetalizationSystem\Xugz\Xugz\obj\Debug\net6.0-windows\Xugz.AssemblyInfoInputs.cache
+D:\WeChat\WeChat Files\xgz4171\FileStorage\File\2025-03\MetalizationSystem0321\MetalizationSystem\MetalizationSystem\Xugz\Xugz\obj\Debug\net6.0-windows\Xugz.AssemblyInfo.cs
+D:\WeChat\WeChat Files\xgz4171\FileStorage\File\2025-03\MetalizationSystem0321\MetalizationSystem\MetalizationSystem\Xugz\Xugz\obj\Debug\net6.0-windows\Xugz.csproj.CoreCompileInputs.cache
+D:\WeChat\WeChat Files\xgz4171\FileStorage\File\2025-03\MetalizationSystem0321\MetalizationSystem\MetalizationSystem\Xugz\Xugz\obj\Debug\net6.0-windows\Xugz.dll
+D:\WeChat\WeChat Files\xgz4171\FileStorage\File\2025-03\MetalizationSystem0321\MetalizationSystem\MetalizationSystem\Xugz\Xugz\obj\Debug\net6.0-windows\refint\Xugz.dll
+D:\WeChat\WeChat Files\xgz4171\FileStorage\File\2025-03\MetalizationSystem0321\MetalizationSystem\MetalizationSystem\Xugz\Xugz\obj\Debug\net6.0-windows\Xugz.pdb
+D:\WeChat\WeChat Files\xgz4171\FileStorage\File\2025-03\MetalizationSystem0321\MetalizationSystem\MetalizationSystem\Xugz\Xugz\obj\Debug\net6.0-windows\ref\Xugz.dll
+D:\Project\2025-03-21 金属化\03 软件资料\MetalizationSystem auto ai 0916\Xugz\Xugz\obj\Debug\net6.0-windows\Xugz.csproj.AssemblyReference.cache
+D:\Project\2025-03-21 金属化\03 软件资料\MetalizationSystem auto ai 0916\Xugz\Xugz\obj\Debug\net6.0-windows\CycleProcessBar.g.cs
+D:\Project\2025-03-21 金属化\03 软件资料\MetalizationSystem auto ai 0916\Xugz\Xugz\obj\Debug\net6.0-windows\Xugz_MarkupCompile.cache
+D:\Project\2025-03-21 金属化\03 软件资料\MetalizationSystem auto ai 0916\Xugz\Xugz\obj\Debug\net6.0-windows\Xugz_MarkupCompile.lref
+D:\Project\2025-03-21 金属化\03 软件资料\MetalizationSystem 0929\Xugz\Xugz\obj\Debug\net6.0-windows\Xugz.csproj.AssemblyReference.cache
+D:\Project\2025-03-21 金属化\03 软件资料\MetalizationSystem 0929\Xugz\Xugz\obj\Debug\net6.0-windows\CycleProcessBar.g.cs
+D:\Project\2025-03-21 金属化\03 软件资料\MetalizationSystem 0929\Xugz\Xugz\obj\Debug\net6.0-windows\Xugz_MarkupCompile.cache
+D:\Project\2025-03-21 金属化\03 软件资料\MetalizationSystem 0929\Xugz\Xugz\obj\Debug\net6.0-windows\Xugz_MarkupCompile.lref

@@ -1,0 +1,140 @@
+﻿<UserControl x:Class="MetalizationSystem.Views.DataList"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MetalizationSystem.Views" xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" xmlns:viewmodels="clr-namespace:MetalizationSystem.ViewModels" xmlns:domain="clr-namespace:MetalizationSystem.Domain" d:DataContext="{d:DesignInstance Type=viewmodels:DataListViewModel}"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <TabControl>
+            <TabItem Header="当前生产数据">
+                <DataGrid Grid.Row="2" Grid.ColumnSpan="6" ItemsSource="{Binding OrderList}" Style="{StaticResource  MaterialDesignDataGrid}" Background="Transparent" ColumnHeaderStyle="{StaticResource MaterialDesignDataGridColumnHeader}" CellStyle="{StaticResource MaterialDesignDataGridCell}" AutoGenerateColumns="False" IsReadOnly="True" >
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="SN" Binding="{ Binding Path = SN}"/>
+                        <DataGridTextColumn Header="工艺路线" Binding="{ Binding Path = Id}"/>      
+                        <DataGridTextColumn Header="配方" Binding="{ Binding Path = SolventInfo}"/>                    
+                        <DataGridTextColumn Header="超声波" Binding="{ Binding Path = PlateCaveId}"/>
+                        <DataGridTextColumn Header="纯水" Binding="{ Binding Path = PlateCaveId}"/>
+                        <DataGridTextColumn Header="镀膜" Binding="{ Binding Path = PlateCaveId}"/>
+                        <DataGridTextColumn Header="晾干" Binding="{ Binding Path = PlateCaveId}"/>
+                        <DataGridTextColumn Header="视觉" Binding="{ Binding Path = PlateCaveId}"/>
+                        <DataGridTextColumn Header="烘干" Binding="{ Binding Path = PlateCaveId}"/>
+                        <DataGridTextColumn Header="烧结" Binding="{ Binding Path = PlateCaveId}"/>
+                        <DataGridTextColumn Header="视觉" Binding="{ Binding Path = PlateCaveId}"/>
+                        <DataGridTextColumn Header="除油" Binding="{ Binding Path = PlateCaveId}"/>
+                        <DataGridTextColumn Header="微蚀" Binding="{ Binding Path = PlateCaveId}"/>
+                        <DataGridTextColumn Header="改性" Binding="{ Binding Path = PlateCaveId}"/>
+                        <DataGridTextColumn Header="预浸" Binding="{ Binding Path = PlateCaveId}"/>
+                        <DataGridTextColumn Header="活化" Binding="{ Binding Path = PlateCaveId}"/>
+                        <DataGridTextColumn Header="后浸" Binding="{ Binding Path = PlateCaveId}"/>
+                        <DataGridTextColumn Header="镀铜" Binding="{ Binding Path = PlateCaveId}"/>
+                        <DataGridTextColumn Header="烘干" Binding="{ Binding Path = PlateCaveId}"/>
+                        <DataGridTextColumn Header="结合力" Binding="{ Binding Path = PlateCaveId}"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </TabItem>
+            <TabItem Header="历史数据">
+                <StackPanel>
+                    <StackPanel Orientation="Horizontal">                       
+                        <DatePicker
+                          Width="150"
+                          materialDesign:HintAssist.Hint="From"
+                          materialDesign:TextFieldAssist.HasClearButton="True"
+                          Style="{StaticResource   MaterialDesignFloatingHintDatePicker}" />
+                        <StackPanel Width="20"/>
+                        <DatePicker
+                          Width="150"
+                          materialDesign:HintAssist.Hint="To"
+                          materialDesign:TextFieldAssist.HasClearButton="True"
+                          Style="{StaticResource MaterialDesignFloatingHintDatePicker}" >
+                            <DatePicker.SelectedDate>
+                                <Binding Path="FutureValidatingDate"
+            UpdateSourceTrigger="PropertyChanged">
+                                    <Binding.ValidationRules>
+                                        <domain:FutureDateValidationRule ValidatesOnTargetUpdated="True" />
+                                    </Binding.ValidationRules>
+                                </Binding>
+                            </DatePicker.SelectedDate>
+                        </DatePicker>
+                        <StackPanel Width="20"/>
+                        <TextBox  Width="120"/>
+                        <StackPanel Width="20"/>
+                        <Button x:Name="SearchButton"
+                            Width="24"
+                            Height="24"
+                            Command="{Binding SearchCommand}"
+                            CommandParameter="{Binding ElementName=SearchBox, Path=Text}"
+                            Style="{StaticResource MaterialDesignToolButton}">          
+                            <materialDesign:PackIcon Kind="Magnify" Opacity=".56" />
+                        </Button>
+                    </StackPanel>
+
+                    <materialDesign:Card>
+                        <TabControl HorizontalContentAlignment="Left"
+              ItemsSource="{Binding CustomTabs}"
+              SelectedItem="{Binding SelectedTab}">
+                            <!--
+      If you use DisplayMemberPath to bind to a simple auto property you can cause a binking leak.
+      See: https://blog.jetbrains.com/dotnet/2014/09/04/fighting-common-wpf-memory-leaks-with-dotmemory/
+    -->
+                            <TabControl.ItemTemplate>
+                                <DataTemplate>
+                                    <StackPanel Orientation="Horizontal">
+                                        <TextBlock Text="{Binding CustomHeader}" />
+                                        <Button Command="{Binding CloseCommand}" CommandParameter="{Binding}">
+                                            <Button.Template>
+                                                <ControlTemplate>
+                                                    <materialDesign:PackIcon Kind="Close"
+                                         Foreground="Red"
+                                         Background="Transparent" />
+                                                </ControlTemplate>
+                                            </Button.Template>
+                                        </Button>
+                                    </StackPanel>
+                                </DataTemplate>
+                            </TabControl.ItemTemplate>
+                            <TabControl.ContentTemplate>
+                                <DataTemplate DataType="domain:CustomTab">
+                                    <DataGrid Grid.Row="2" Grid.ColumnSpan="6" ItemsSource="{Binding CustomContent}" Style="{StaticResource  MaterialDesignDataGrid}" Background="Transparent" ColumnHeaderStyle="{StaticResource MaterialDesignDataGridColumnHeader}" CellStyle="{StaticResource MaterialDesignDataGridCell}" AutoGenerateColumns="False" IsReadOnly="True" >
+                                        <DataGrid.Columns>
+                                            <DataGridTextColumn Header="SN" Binding="{ Binding Path = SN}"/>
+                                            <DataGridTextColumn Header="Id" Binding="{ Binding Path = Id}"/>
+                                            <DataGridTextColumn Header="IsBusy" Binding="{ Binding Path = IsBusy}"/>
+                                            <DataGridTextColumn Header="IsFinish" Binding="{ Binding Path = IsFinish}"/>
+                                            <DataGridTextColumn Header="配方" Binding="{ Binding Path = SolventInfo}"/>
+                                            <DataGridTextColumn Header="玻璃Id" Binding="{ Binding Path = PlateCaveId}"/>
+                                            <DataGridTextColumn Header="超声波" Binding="{ Binding Path = PlateCaveId}"/>
+                                            <DataGridTextColumn Header="纯水" Binding="{ Binding Path = PlateCaveId}"/>
+                                            <DataGridTextColumn Header="镀膜" Binding="{ Binding Path = PlateCaveId}"/>
+                                            <DataGridTextColumn Header="晾干" Binding="{ Binding Path = PlateCaveId}"/>
+                                            <DataGridTextColumn Header="视觉" Binding="{ Binding Path = PlateCaveId}"/>
+                                            <DataGridTextColumn Header="烘干" Binding="{ Binding Path = PlateCaveId}"/>
+                                            <DataGridTextColumn Header="烧结" Binding="{ Binding Path = PlateCaveId}"/>
+                                            <DataGridTextColumn Header="视觉" Binding="{ Binding Path = PlateCaveId}"/>
+                                            <DataGridTextColumn Header="除油" Binding="{ Binding Path = PlateCaveId}"/>
+                                            <DataGridTextColumn Header="微蚀" Binding="{ Binding Path = PlateCaveId}"/>
+                                            <DataGridTextColumn Header="改性" Binding="{ Binding Path = PlateCaveId}"/>
+                                            <DataGridTextColumn Header="预浸" Binding="{ Binding Path = PlateCaveId}"/>
+                                            <DataGridTextColumn Header="活化" Binding="{ Binding Path = PlateCaveId}"/>
+                                            <DataGridTextColumn Header="后浸" Binding="{ Binding Path = PlateCaveId}"/>
+                                            <DataGridTextColumn Header="镀铜" Binding="{ Binding Path = PlateCaveId}"/>
+                                            <DataGridTextColumn Header="烘干" Binding="{ Binding Path = PlateCaveId}"/>
+                                            <DataGridTextColumn Header="结合力" Binding="{ Binding Path = PlateCaveId}"/>
+                                        </DataGrid.Columns>
+                                    </DataGrid>
+
+                                    <!--<TextBlock Margin="10"
+                   FontSize="18"
+                   Text="{Binding CustomContent}" />-->
+                                </DataTemplate>
+                            </TabControl.ContentTemplate>
+                        </TabControl>
+                    </materialDesign:Card>
+                </StackPanel>
+                              
+
+            </TabItem>
+        </TabControl>
+    </Grid>
+</UserControl>

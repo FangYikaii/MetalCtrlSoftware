@@ -1,0 +1,120 @@
+E:\ywt\MyProjects\JgProjects\DbOperationExTest\DbOperationLibrary\obj\Debug\DbOperationLibrary.csproj.CoreCompileInputs.cache
+E:\ywt\MyProjects\JgProjects\DbOperationExTest\DbOperationLibrary\bin\Debug\DbOperationLibrary.dll
+E:\ywt\MyProjects\JgProjects\DbOperationExTest\DbOperationLibrary\bin\Debug\DbOperationLibrary.pdb
+E:\ywt\MyProjects\JgProjects\DbOperationExTest\DbOperationLibrary\bin\Debug\SqlSugar.dll
+E:\ywt\MyProjects\JgProjects\DbOperationExTest\DbOperationLibrary\bin\Debug\System.Data.SQLite.dll
+E:\ywt\MyProjects\JgProjects\DbOperationExTest\DbOperationLibrary\obj\Debug\DbOperationLibrary.csproj.CopyComplete
+E:\ywt\MyProjects\JgProjects\DbOperationExTest\DbOperationLibrary\obj\Debug\DbOperationLibrary.dll
+E:\ywt\MyProjects\JgProjects\DbOperationExTest\DbOperationLibrary\obj\Debug\DbOperationLibrary.pdb
+E:\ywt\MyProjects\JgProjects\DbOperationExTest\DbOperationLibrary\obj\Debug\DbOperationLibrary.csproj.AssemblyReference.cache
+C:\Users\34236\Desktop\DbOperationExTest\DbOperationExTest\DbOperationLibrary\bin\Debug\DbOperationLibrary.dll
+C:\Users\34236\Desktop\DbOperationExTest\DbOperationExTest\DbOperationLibrary\bin\Debug\DbOperationLibrary.pdb
+C:\Users\34236\Desktop\DbOperationExTest\DbOperationExTest\DbOperationLibrary\bin\Debug\SqlSugar.dll
+C:\Users\34236\Desktop\DbOperationExTest\DbOperationExTest\DbOperationLibrary\bin\Debug\System.Data.SQLite.dll
+C:\Users\34236\Desktop\DbOperationExTest\DbOperationExTest\DbOperationLibrary\obj\Debug\DbOperationLibrary.csproj.AssemblyReference.cache
+C:\Users\34236\Desktop\DbOperationExTest\DbOperationExTest\DbOperationLibrary\obj\Debug\DbOperationLibrary.csproj.CoreCompileInputs.cache
+C:\Users\34236\Desktop\DbOperationExTest\DbOperationExTest\DbOperationLibrary\obj\Debug\DbOperat.3A3E7209.Up2Date
+C:\Users\34236\Desktop\DbOperationExTest\DbOperationExTest\DbOperationLibrary\obj\Debug\DbOperationLibrary.dll
+C:\Users\34236\Desktop\DbOperationExTest\DbOperationExTest\DbOperationLibrary\obj\Debug\DbOperationLibrary.pdb
+C:\Users\34236\Desktop\金属化\C#\MetalizationSystem0820\MetalizationSystem\DbOperationLibrary\bin\Debug\DbOperationLibrary.dll.config
+C:\Users\34236\Desktop\金属化\C#\MetalizationSystem0820\MetalizationSystem\DbOperationLibrary\bin\Debug\DbOperationLibrary.dll
+C:\Users\34236\Desktop\金属化\C#\MetalizationSystem0820\MetalizationSystem\DbOperationLibrary\bin\Debug\DbOperationLibrary.pdb
+C:\Users\34236\Desktop\金属化\C#\MetalizationSystem0820\MetalizationSystem\DbOperationLibrary\bin\Debug\EntityFramework.dll
+C:\Users\34236\Desktop\金属化\C#\MetalizationSystem0820\MetalizationSystem\DbOperationLibrary\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\34236\Desktop\金属化\C#\MetalizationSystem0820\MetalizationSystem\DbOperationLibrary\bin\Debug\SqlSugar.dll
+C:\Users\34236\Desktop\金属化\C#\MetalizationSystem0820\MetalizationSystem\DbOperationLibrary\bin\Debug\System.Data.SQLite.dll
+C:\Users\34236\Desktop\金属化\C#\MetalizationSystem0820\MetalizationSystem\DbOperationLibrary\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\34236\Desktop\金属化\C#\MetalizationSystem0820\MetalizationSystem\DbOperationLibrary\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\34236\Desktop\金属化\C#\MetalizationSystem0820\MetalizationSystem\DbOperationLibrary\bin\Debug\EntityFramework.xml
+C:\Users\34236\Desktop\金属化\C#\MetalizationSystem0820\MetalizationSystem\DbOperationLibrary\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\34236\Desktop\金属化\C#\MetalizationSystem0820\MetalizationSystem\DbOperationLibrary\bin\Debug\System.Data.SQLite.xml
+C:\Users\34236\Desktop\金属化\C#\MetalizationSystem0820\MetalizationSystem\DbOperationLibrary\obj\Debug\DbOperationLibrary.csproj.AssemblyReference.cache
+C:\Users\34236\Desktop\金属化\C#\MetalizationSystem0820\MetalizationSystem\DbOperationLibrary\obj\Debug\DbOperationLibrary.csproj.CoreCompileInputs.cache
+C:\Users\34236\Desktop\金属化\C#\MetalizationSystem0820\MetalizationSystem\DbOperationLibrary\obj\Debug\DbOperat.3A3E7209.Up2Date
+C:\Users\34236\Desktop\金属化\C#\MetalizationSystem0820\MetalizationSystem\DbOperationLibrary\obj\Debug\DbOperationLibrary.dll
+C:\Users\34236\Desktop\金属化\C#\MetalizationSystem0820\MetalizationSystem\DbOperationLibrary\obj\Debug\DbOperationLibrary.pdb
+D:\Project\2025-03-21 金属化\03 软件资料\MetalizationSystem auto ai 0915\DbOperationLibrary\bin\Debug\DbOperationLibrary.dll.config
+D:\Project\2025-03-21 金属化\03 软件资料\MetalizationSystem auto ai 0915\DbOperationLibrary\bin\Debug\DbOperationLibrary.dll
+D:\Project\2025-03-21 金属化\03 软件资料\MetalizationSystem auto ai 0915\DbOperationLibrary\bin\Debug\DbOperationLibrary.pdb
+D:\Project\2025-03-21 金属化\03 软件资料\MetalizationSystem auto ai 0915\DbOperationLibrary\bin\Debug\EntityFramework.dll
+D:\Project\2025-03-21 金属化\03 软件资料\MetalizationSystem auto ai 0915\DbOperationLibrary\bin\Debug\EntityFramework.SqlServer.dll
+D:\Project\2025-03-21 金属化\03 软件资料\MetalizationSystem auto ai 0915\DbOperationLibrary\bin\Debug\SqlSugar.dll
+D:\Project\2025-03-21 金属化\03 软件资料\MetalizationSystem auto ai 0915\DbOperationLibrary\bin\Debug\System.Data.SQLite.dll
+D:\Project\2025-03-21 金属化\03 软件资料\MetalizationSystem auto ai 0915\DbOperationLibrary\bin\Debug\System.Data.SQLite.EF6.dll
+D:\Project\2025-03-21 金属化\03 软件资料\MetalizationSystem auto ai 0915\DbOperationLibrary\bin\Debug\System.Data.SQLite.Linq.dll
+D:\Project\2025-03-21 金属化\03 软件资料\MetalizationSystem auto ai 0915\DbOperationLibrary\bin\Debug\EntityFramework.xml
+D:\Project\2025-03-21 金属化\03 软件资料\MetalizationSystem auto ai 0915\DbOperationLibrary\bin\Debug\EntityFramework.SqlServer.xml
+D:\Project\2025-03-21 金属化\03 软件资料\MetalizationSystem auto ai 0915\DbOperationLibrary\bin\Debug\System.Data.SQLite.xml
+D:\Project\2025-03-21 金属化\03 软件资料\MetalizationSystem auto ai 0915\DbOperationLibrary\obj\Debug\DbOperationLibrary.csproj.AssemblyReference.cache
+D:\Project\2025-03-21 金属化\03 软件资料\MetalizationSystem auto ai 0915\DbOperationLibrary\obj\Debug\DbOperationLibrary.csproj.CoreCompileInputs.cache
+D:\Project\2025-03-21 金属化\03 软件资料\MetalizationSystem auto ai 0915\DbOperationLibrary\obj\Debug\DbOperat.3A3E7209.Up2Date
+D:\Project\2025-03-21 金属化\03 软件资料\MetalizationSystem auto ai 0915\DbOperationLibrary\obj\Debug\DbOperationLibrary.dll
+D:\Project\2025-03-21 金属化\03 软件资料\MetalizationSystem auto ai 0915\DbOperationLibrary\obj\Debug\DbOperationLibrary.pdb
+D:\Project\2025-03-21 金属化\03 软件资料\MetalizationSystem auto ai 0916\DbOperationLibrary\bin\Debug\DbOperationLibrary.dll.config
+D:\Project\2025-03-21 金属化\03 软件资料\MetalizationSystem auto ai 0916\DbOperationLibrary\bin\Debug\DbOperationLibrary.dll
+D:\Project\2025-03-21 金属化\03 软件资料\MetalizationSystem auto ai 0916\DbOperationLibrary\bin\Debug\DbOperationLibrary.pdb
+D:\Project\2025-03-21 金属化\03 软件资料\MetalizationSystem auto ai 0916\DbOperationLibrary\bin\Debug\EntityFramework.dll
+D:\Project\2025-03-21 金属化\03 软件资料\MetalizationSystem auto ai 0916\DbOperationLibrary\bin\Debug\EntityFramework.SqlServer.dll
+D:\Project\2025-03-21 金属化\03 软件资料\MetalizationSystem auto ai 0916\DbOperationLibrary\bin\Debug\SqlSugar.dll
+D:\Project\2025-03-21 金属化\03 软件资料\MetalizationSystem auto ai 0916\DbOperationLibrary\bin\Debug\System.Data.SQLite.dll
+D:\Project\2025-03-21 金属化\03 软件资料\MetalizationSystem auto ai 0916\DbOperationLibrary\bin\Debug\System.Data.SQLite.EF6.dll
+D:\Project\2025-03-21 金属化\03 软件资料\MetalizationSystem auto ai 0916\DbOperationLibrary\bin\Debug\System.Data.SQLite.Linq.dll
+D:\Project\2025-03-21 金属化\03 软件资料\MetalizationSystem auto ai 0916\DbOperationLibrary\bin\Debug\EntityFramework.xml
+D:\Project\2025-03-21 金属化\03 软件资料\MetalizationSystem auto ai 0916\DbOperationLibrary\bin\Debug\EntityFramework.SqlServer.xml
+D:\Project\2025-03-21 金属化\03 软件资料\MetalizationSystem auto ai 0916\DbOperationLibrary\bin\Debug\System.Data.SQLite.xml
+D:\Project\2025-03-21 金属化\03 软件资料\MetalizationSystem auto ai 0916\DbOperationLibrary\obj\Debug\DbOperationLibrary.csproj.AssemblyReference.cache
+D:\Project\2025-03-21 金属化\03 软件资料\MetalizationSystem auto ai 0916\DbOperationLibrary\obj\Debug\DbOperationLibrary.csproj.CoreCompileInputs.cache
+D:\Project\2025-03-21 金属化\03 软件资料\MetalizationSystem auto ai 0916\DbOperationLibrary\obj\Debug\DbOperat.3A3E7209.Up2Date
+D:\Project\2025-03-21 金属化\03 软件资料\MetalizationSystem auto ai 0916\DbOperationLibrary\obj\Debug\DbOperationLibrary.dll
+D:\Project\2025-03-21 金属化\03 软件资料\MetalizationSystem auto ai 0916\DbOperationLibrary\obj\Debug\DbOperationLibrary.pdb
+D:\Project\2025-03-21 金属化\03 软件资料\MetalizationSystem 0929\DbOperationLibrary\bin\Debug\DbOperationLibrary.dll.config
+D:\Project\2025-03-21 金属化\03 软件资料\MetalizationSystem 0929\DbOperationLibrary\bin\Debug\DbOperationLibrary.dll
+D:\Project\2025-03-21 金属化\03 软件资料\MetalizationSystem 0929\DbOperationLibrary\bin\Debug\DbOperationLibrary.pdb
+D:\Project\2025-03-21 金属化\03 软件资料\MetalizationSystem 0929\DbOperationLibrary\bin\Debug\EntityFramework.dll
+D:\Project\2025-03-21 金属化\03 软件资料\MetalizationSystem 0929\DbOperationLibrary\bin\Debug\EntityFramework.SqlServer.dll
+D:\Project\2025-03-21 金属化\03 软件资料\MetalizationSystem 0929\DbOperationLibrary\bin\Debug\SqlSugar.dll
+D:\Project\2025-03-21 金属化\03 软件资料\MetalizationSystem 0929\DbOperationLibrary\bin\Debug\System.Data.SQLite.dll
+D:\Project\2025-03-21 金属化\03 软件资料\MetalizationSystem 0929\DbOperationLibrary\bin\Debug\System.Data.SQLite.EF6.dll
+D:\Project\2025-03-21 金属化\03 软件资料\MetalizationSystem 0929\DbOperationLibrary\bin\Debug\System.Data.SQLite.Linq.dll
+D:\Project\2025-03-21 金属化\03 软件资料\MetalizationSystem 0929\DbOperationLibrary\bin\Debug\EntityFramework.xml
+D:\Project\2025-03-21 金属化\03 软件资料\MetalizationSystem 0929\DbOperationLibrary\bin\Debug\EntityFramework.SqlServer.xml
+D:\Project\2025-03-21 金属化\03 软件资料\MetalizationSystem 0929\DbOperationLibrary\bin\Debug\System.Data.SQLite.xml
+D:\Project\2025-03-21 金属化\03 软件资料\MetalizationSystem 0929\DbOperationLibrary\obj\Debug\DbOperationLibrary.csproj.AssemblyReference.cache
+D:\Project\2025-03-21 金属化\03 软件资料\MetalizationSystem 0929\DbOperationLibrary\obj\Debug\DbOperationLibrary.csproj.CoreCompileInputs.cache
+D:\Project\2025-03-21 金属化\03 软件资料\MetalizationSystem 0929\DbOperationLibrary\obj\Debug\DbOperat.3A3E7209.Up2Date
+D:\Project\2025-03-21 金属化\03 软件资料\MetalizationSystem 0929\DbOperationLibrary\obj\Debug\DbOperationLibrary.dll
+D:\Project\2025-03-21 金属化\03 软件资料\MetalizationSystem 0929\DbOperationLibrary\obj\Debug\DbOperationLibrary.pdb
+D:\Project\MetalizationSystem\DbOperationLibrary\bin\Debug\DbOperationLibrary.dll.config
+D:\Project\MetalizationSystem\DbOperationLibrary\bin\Debug\DbOperationLibrary.dll
+D:\Project\MetalizationSystem\DbOperationLibrary\bin\Debug\DbOperationLibrary.pdb
+D:\Project\MetalizationSystem\DbOperationLibrary\bin\Debug\EntityFramework.dll
+D:\Project\MetalizationSystem\DbOperationLibrary\bin\Debug\EntityFramework.SqlServer.dll
+D:\Project\MetalizationSystem\DbOperationLibrary\bin\Debug\SqlSugar.dll
+D:\Project\MetalizationSystem\DbOperationLibrary\bin\Debug\System.Data.SQLite.dll
+D:\Project\MetalizationSystem\DbOperationLibrary\bin\Debug\System.Data.SQLite.EF6.dll
+D:\Project\MetalizationSystem\DbOperationLibrary\bin\Debug\System.Data.SQLite.Linq.dll
+D:\Project\MetalizationSystem\DbOperationLibrary\bin\Debug\EntityFramework.xml
+D:\Project\MetalizationSystem\DbOperationLibrary\bin\Debug\EntityFramework.SqlServer.xml
+D:\Project\MetalizationSystem\DbOperationLibrary\bin\Debug\System.Data.SQLite.xml
+D:\Project\MetalizationSystem\DbOperationLibrary\obj\Debug\DbOperationLibrary.csproj.AssemblyReference.cache
+D:\Project\MetalizationSystem\DbOperationLibrary\obj\Debug\DbOperationLibrary.csproj.CoreCompileInputs.cache
+D:\Project\MetalizationSystem\DbOperationLibrary\obj\Debug\DbOperat.3A3E7209.Up2Date
+D:\Project\MetalizationSystem\DbOperationLibrary\obj\Debug\DbOperationLibrary.dll
+D:\Project\MetalizationSystem\DbOperationLibrary\obj\Debug\DbOperationLibrary.pdb
+D:\Project\2025-03-21 金属化\03 软件资料\MetalizationSystem\DbOperationLibrary\bin\Debug\DbOperationLibrary.dll.config
+D:\Project\2025-03-21 金属化\03 软件资料\MetalizationSystem\DbOperationLibrary\bin\Debug\DbOperationLibrary.dll
+D:\Project\2025-03-21 金属化\03 软件资料\MetalizationSystem\DbOperationLibrary\bin\Debug\DbOperationLibrary.pdb
+D:\Project\2025-03-21 金属化\03 软件资料\MetalizationSystem\DbOperationLibrary\bin\Debug\EntityFramework.dll
+D:\Project\2025-03-21 金属化\03 软件资料\MetalizationSystem\DbOperationLibrary\bin\Debug\EntityFramework.SqlServer.dll
+D:\Project\2025-03-21 金属化\03 软件资料\MetalizationSystem\DbOperationLibrary\bin\Debug\SqlSugar.dll
+D:\Project\2025-03-21 金属化\03 软件资料\MetalizationSystem\DbOperationLibrary\bin\Debug\System.Data.SQLite.dll
+D:\Project\2025-03-21 金属化\03 软件资料\MetalizationSystem\DbOperationLibrary\bin\Debug\System.Data.SQLite.EF6.dll
+D:\Project\2025-03-21 金属化\03 软件资料\MetalizationSystem\DbOperationLibrary\bin\Debug\System.Data.SQLite.Linq.dll
+D:\Project\2025-03-21 金属化\03 软件资料\MetalizationSystem\DbOperationLibrary\bin\Debug\EntityFramework.xml
+D:\Project\2025-03-21 金属化\03 软件资料\MetalizationSystem\DbOperationLibrary\bin\Debug\EntityFramework.SqlServer.xml
+D:\Project\2025-03-21 金属化\03 软件资料\MetalizationSystem\DbOperationLibrary\bin\Debug\System.Data.SQLite.xml
+D:\Project\2025-03-21 金属化\03 软件资料\MetalizationSystem\DbOperationLibrary\obj\Debug\DbOperationLibrary.csproj.AssemblyReference.cache
+D:\Project\2025-03-21 金属化\03 软件资料\MetalizationSystem\DbOperationLibrary\obj\Debug\DbOperationLibrary.csproj.CoreCompileInputs.cache
+D:\Project\2025-03-21 金属化\03 软件资料\MetalizationSystem\DbOperationLibrary\obj\Debug\DbOperat.3A3E7209.Up2Date
+D:\Project\2025-03-21 金属化\03 软件资料\MetalizationSystem\DbOperationLibrary\obj\Debug\DbOperationLibrary.dll
+D:\Project\2025-03-21 金属化\03 软件资料\MetalizationSystem\DbOperationLibrary\obj\Debug\DbOperationLibrary.pdb

@@ -1,0 +1,45 @@
+﻿<UserControl x:Class="MetalizationSystem.Views.UC.IoOutputUc"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MetalizationSystem.Views.UC"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <local:IoOutputBtn x:Name="Btn1" Grid.Row="0"/>
+        <local:IoOutputBtn x:Name="Btn2" Grid.Row="1"/>
+        <local:IoOutputBtn x:Name="Btn3" Grid.Row="2"/>
+        <local:IoOutputBtn x:Name="Btn4" Grid.Row="3"/>
+        <local:IoOutputBtn x:Name="Btn5" Grid.Row="4"/>
+        <local:IoOutputBtn x:Name="Btn6" Grid.Row="5"/>
+        <local:IoOutputBtn x:Name="Btn7" Grid.Row="6"/>
+        <local:IoOutputBtn x:Name="Btn8" Grid.Row="7"/>
+        <local:IoOutputBtn x:Name="Btn9" Grid.Row="8"/>
+        <local:IoOutputBtn x:Name="Btn10" Grid.Row="9"/>
+        <local:IoOutputBtn x:Name="Btn11" Grid.Row="10"/>
+        <local:IoOutputBtn x:Name="Btn12" Grid.Row="11"/>
+        <local:IoOutputBtn x:Name="Btn13" Grid.Row="12"/>
+        <local:IoOutputBtn x:Name="Btn14" Grid.Row="13"/>
+        <local:IoOutputBtn x:Name="Btn15" Grid.Row="14"/>
+        <local:IoOutputBtn x:Name="Btn16" Grid.Row="15"/>
+    </Grid>
+</UserControl>

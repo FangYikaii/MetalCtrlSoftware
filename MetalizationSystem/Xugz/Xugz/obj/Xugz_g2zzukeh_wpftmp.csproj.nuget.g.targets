@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Condition=" '$(TargetFramework)' == 'net48' AND '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)entityframework\6.4.4\buildTransitive\EntityFramework.targets" Condition="Exists('$(NuGetPackageRoot)entityframework\6.4.4\buildTransitive\EntityFramework.targets')" />
+    <Import Project="$(NuGetPackageRoot)stub.system.data.sqlite.core.netframework\1.0.119\buildTransitive\net46\Stub.System.Data.SQLite.Core.NetFramework.targets" Condition="Exists('$(NuGetPackageRoot)stub.system.data.sqlite.core.netframework\1.0.119\buildTransitive\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" />
+  </ImportGroup>
+  <ImportGroup Condition=" '$(TargetFramework)' == 'net6.0-windows' AND '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)system.drawing.common\9.0.0\buildTransitive\netcoreapp2.0\System.Drawing.Common.targets" Condition="Exists('$(NuGetPackageRoot)system.drawing.common\9.0.0\buildTransitive\netcoreapp2.0\System.Drawing.Common.targets')" />
+    <Import Project="$(NuGetPackageRoot)system.io.ports\9.0.0\buildTransitive\netcoreapp2.0\System.IO.Ports.targets" Condition="Exists('$(NuGetPackageRoot)system.io.ports\9.0.0\buildTransitive\netcoreapp2.0\System.IO.Ports.targets')" />
+    <Import Project="$(NuGetPackageRoot)system.io.packaging\9.0.0\buildTransitive\netcoreapp2.0\System.IO.Packaging.targets" Condition="Exists('$(NuGetPackageRoot)system.io.packaging\9.0.0\buildTransitive\netcoreapp2.0\System.IO.Packaging.targets')" />
+    <Import Project="$(NuGetPackageRoot)entityframework\6.4.4\buildTransitive\netcoreapp3.0\EntityFramework.targets" Condition="Exists('$(NuGetPackageRoot)entityframework\6.4.4\buildTransitive\netcoreapp3.0\EntityFramework.targets')" />
+  </ImportGroup>
+</Project>

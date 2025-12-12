@@ -1,0 +1,225 @@
+<UserControl x:Class="MetalizationSystem.Views.XHome"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MetalizationSystem.Views" xmlns:locals="clr-namespace:MetalizationSystem"
+             xmlns:viewmodels="clr-namespace:MetalizationSystem.ViewModels"   
+               xmlns:domain="clr-namespace:MetalizationSystem.Domain"             
+               xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" 
+               xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
+             xmlns:xy="clr-namespace:MetalizationSystem.Views.UC"           
+             d:DataContext="{d:DesignInstance Type=viewmodels:XHomeViewModel}"
+             mc:Ignorable="d" 
+             d:DesignHeight="650" d:DesignWidth="1100">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <locals:ColorConvertBehavior  x:Key="colorConverter"/>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="320"/>
+            <RowDefinition Height="170"/>
+            <RowDefinition Height="60"/>
+        </Grid.RowDefinitions>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="200"/>
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Grid.Column="0" Orientation="Horizontal">
+                <locals:ButtonEx Margin="5"  Command="{Binding StartCommand}"   Grid.Column="2" Content="开始" FontFamily="kaiti" FontSize="10" Foreground="#1afa29" OnMouseOverForegroundColor="#1afa29" ImageSize="40"
+PathData="M212.992 526.336 212.992 526.336 212.992 526.336 215.04 526.336 212.992 526.336Z M817.152 202.752 817.152 202.752C737.28 122.88 628.736 75.776 509.952 75.776c-118.784 0-229.376 49.152-307.2 126.976l0 0c-77.824 77.824-126.976 186.368-126.976 307.2 0 118.784 49.152 229.376 126.976 307.2 77.824 79.872 188.416 126.976 307.2 126.976 120.832 0 229.376-49.152 307.2-126.976 79.872-77.824 126.976-186.368 126.976-307.2C946.176 389.12 897.024 280.576 817.152 202.752zM770.048 770.048c-65.536 65.536-157.696 108.544-260.096 108.544-102.4 0-194.56-40.96-260.096-108.544C184.32 704.512 141.312 612.352 141.312 509.952s40.96-194.56 108.544-260.096C317.44 184.32 409.6 141.312 509.952 141.312c100.352 0 192.512 40.96 258.048 106.496l2.048 2.048c65.536 65.536 108.544 157.696 108.544 260.096S837.632 704.512 770.048 770.048z M385.024 249.856l202.752 116.736 202.752 116.736c14.336 8.192 18.432 26.624 10.24 40.96-4.096 4.096-8.192 8.192-12.288 12.288l-202.752 116.736 0 0-202.752 116.736c-14.336 8.192-32.768 4.096-40.96-10.24-2.048-6.144-4.096-10.24-4.096-16.384L337.92 509.952l0 0L337.92 274.432c0-16.384 12.288-28.672 28.672-28.672C374.784 245.76 380.928 247.808 385.024 249.856L385.024 249.856z">
+                </locals:ButtonEx>
+                <locals:ButtonEx Margin="5"  Command="{Binding PauseCommand}"   Grid.Column="2" Content="暂停" FontFamily="kaiti" FontSize="10" Foreground="#f4ea2a" OnMouseOverForegroundColor="#f4ea2a" ImageSize="40"
+PathData="M524.272128 0.018022C241.513165 0.018022 12.288102 229.245952 12.288102 512.005018c0 112.734003 36.43904 216.957952 98.17897 301.537997l38.667981-40.258048C97.458176 699.230003 67.143168 609.158963 67.143168 512.005018 67.143168 259.540992 271.807078 54.872986 524.272128 54.872986c252.45696 0 457.120973 204.668006 457.120973 457.132032 0 252.460954-204.664013 457.118003-457.120973 457.118003-96.240026 0-185.530982-29.744026-259.189043-80.53504l-34.539008 42.797978c83.150029 58.344038 184.437965 92.596019 293.728973 92.596019 282.758963 0 511.984026-229.220966 511.984026-511.976038C1036.256154 229.245952 807.031091 0.018022 524.272128 0.018022zM615.693107 256.011981l0 511.987 54.855 0L670.548107 256.012 615.693128 256.012zM377.996083 256.011981l0 511.987 54.855 0L432.851083 256.012 377.996128 256.012z">
+                </locals:ButtonEx>
+                <locals:ButtonEx Margin="5"  Command="{Binding StopCommand}"   Grid.Column="2" Content="停止" FontFamily="kaiti" FontSize="10" Foreground="#d81e06" OnMouseOverForegroundColor="#d81e06" ImageSize="40"
+PathData="M385.011469 384.945105h255.606366v255.606366H385.011469V384.945105z m569.363181 384.687581l-95.213371-95.021667a386.988038 386.988038 0 1 0-184.6756 184.547796l95.213371 95.085569a511.979551 511.979551 0 1 1 184.6756-184.611698z">
+                </locals:ButtonEx>
+            </StackPanel>
+
+            <ListBox Grid.Column="1" Margin="5" Height="80" ItemsSource="{Binding WorkFlowItem}" Style="{StaticResource  MaterialDesignChoiceChipPrimaryOutlineListBox}" />
+
+            <StackPanel Grid.Column="2">
+                <Label Margin="5" Content="连接状态" Style="{StaticResource labelStyle}" Foreground="White"  Height="15"/>
+                <StackPanel Orientation="Horizontal" Margin="5">
+                    <Label Content="总线卡" FontSize="10" Width="45" HorizontalContentAlignment="Center"  Foreground="{Binding CardConnected,Converter={StaticResource colorConverter}}"/>
+                    <Label Content="机器人" FontSize="10" Width="45" HorizontalContentAlignment="Center"  Foreground="{Binding RobotConnected ,Converter={StaticResource colorConverter}}"/>
+                    <Label Content="定量泵" FontSize="10" Width="45" HorizontalContentAlignment="Center"  Foreground="{Binding FixPumpConnected,Converter={StaticResource colorConverter}}"/>
+                    <Label Content="PT100" FontSize="10" Width="45" HorizontalContentAlignment="Center"  Foreground="{Binding Pt100erConnected,Converter={StaticResource colorConverter}}"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="5">
+                    <Label Content="烘干箱" FontSize="10" Width="45" HorizontalContentAlignment="Center"  Foreground="{Binding DryBoxConnected,Converter={StaticResource colorConverter}}"/>
+                    <Label Content="搅拌器" FontSize="10" Width="45" HorizontalContentAlignment="Center"  Foreground="{Binding MixerConnected,Converter={StaticResource colorConverter}}"/>
+                    <Label Content="OM" FontSize="10" Width="45" HorizontalContentAlignment="Center"  Foreground="{Binding OmConnected,Converter={StaticResource colorConverter}}"/>
+                    <Label Content="AI" FontSize="10" Width="45" HorizontalContentAlignment="Center"  Foreground="{Binding AiConnected ,Converter={StaticResource colorConverter}}"/>
+                </StackPanel>
+            </StackPanel>
+
+
+        </Grid>
+        <Border  Grid.Row="1" Background="LightGray"  Margin="10" BorderBrush="Black" BorderThickness="2" CornerRadius="5">
+            <Grid >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Label Margin="10" Grid.Column="1" Content="上料区" HorizontalAlignment="Center" Foreground="Linen" />
+                <xy:GlassPallet Grid.Column="1" Grid.RowSpan="2" IsHave="{Binding IsHaveLoad}" HorizontalAlignment="Center" Width="50" Height="50" VerticalAlignment="Center"/>
+
+                <Label Margin="10" Grid.Column="2" Content="下料区" HorizontalAlignment="Center" Foreground="Linen" />
+                <xy:GlassPallet Grid.Column="2" Grid.RowSpan="2" IsHave="{Binding IsHaveUnLoad}" IsLoad="False" HorizontalAlignment="Center" Width="50" Height="50" VerticalAlignment="Center"/>
+
+                <xy:LiquidDispensing_UC Margin="2" Grid.Row="1" Grid.RowSpan="4"/>
+
+
+                <xy:DryBox_UC Margin="2" Grid.Row="1" Grid.Column="11" Grid.RowSpan="4" Temperature="{Binding DryBoxTemperature}"/>
+
+                <Grid Margin="10" Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="10" Grid.RowSpan="2">
+                    <Image Source="\Resources\LineMotor.png" Stretch="Fill"/>
+                </Grid>
+
+
+
+                <Border  Grid.Column="1"  Grid.Row="4"  Grid.RowSpan="2"  Background="LightGray"  Margin="10" BorderBrush="Black" BorderThickness="1" CornerRadius="5">
+                    <StackPanel>
+                        <StackPanel Height="8"/>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                            <xy:ReactionTank_UC  Width="7" Height="25"/>
+                            <StackPanel Width="10"/>
+                            <xy:ReactionTank_UC  Width="7" Height="25"/>
+                            <StackPanel Width="5"/>
+                        </StackPanel>
+                        <StackPanel Height="5"/>
+                        <StackPanel  Orientation="Horizontal" VerticalAlignment="Top"  HorizontalAlignment="Right">
+                            <xy:ReactionTank_UC  Width="7" Height="25"/>
+                            <StackPanel Width="10"/>
+                            <xy:ReactionTank_UC  Width="7" Height="25"/>
+                            <StackPanel Width="5"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Border>
+                <Border  Grid.Column="2"  Grid.Row="4"  Grid.RowSpan="2"  Background="LightGray"  Margin="10" BorderBrush="Black" BorderThickness="1" CornerRadius="5">
+                    <StackPanel>
+                        <StackPanel Height="8"/>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                            <xy:ReactionTank_UC  Width="7" Height="25"/>
+                            <StackPanel Width="10"/>
+                            <xy:ReactionTank_UC  Width="7" Height="25"/>
+                            <StackPanel Width="5"/>
+                        </StackPanel>
+                        <StackPanel Height="5"/>
+                        <StackPanel  Orientation="Horizontal" VerticalAlignment="Top"  HorizontalAlignment="Right">
+                            <xy:ReactionTank_UC  Width="7" Height="25"/>
+                            <StackPanel Width="10"/>
+                            <xy:ReactionTank_UC  Width="7" Height="25"/>
+                            <StackPanel Width="5"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Border>
+                <Border  Grid.Column="3"  Grid.Row="4"  Grid.RowSpan="2"  Background="LightGray"  Margin="10" BorderBrush="Black" BorderThickness="1" CornerRadius="5">
+                    <StackPanel>
+                        <StackPanel Height="8"/>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                            <xy:ReactionTank_UC  Width="7" Height="25"/>
+                            <StackPanel Width="10"/>
+                            <xy:ReactionTank_UC  Width="7" Height="25"/>
+                            <StackPanel Width="5"/>
+                        </StackPanel>
+                        <StackPanel Height="5"/>
+                        <StackPanel  Orientation="Horizontal" VerticalAlignment="Top"  HorizontalAlignment="Right">
+                            <xy:ReactionTank_UC  Width="7" Height="25"/>
+                            <StackPanel Width="10"/>
+                            <xy:ReactionTank_UC  Width="7" Height="25"/>
+                            <StackPanel Width="5"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Border>
+
+                <Border  Grid.Column="4"  Grid.Row="4"  Grid.RowSpan="2"  Background="LightGray"  Margin="10" BorderBrush="Black" BorderThickness="1" CornerRadius="5">
+                    <StackPanel>
+                        <StackPanel Height="8"/>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                            <xy:ReactionTank_UC  Width="7" Height="25"/>
+                            <StackPanel Width="10"/>
+                            <xy:ReactionTank_UC  Width="7" Height="25"/>
+                            <StackPanel Width="5"/>
+                        </StackPanel>
+                        <StackPanel Height="5"/>
+                        <StackPanel  Orientation="Horizontal" VerticalAlignment="Top"  HorizontalAlignment="Right">
+                            <xy:ReactionTank_UC  Width="7" Height="25"/>
+                            <StackPanel Width="10"/>
+                            <xy:ReactionTank_UC  Width="7" Height="25"/>
+                            <StackPanel Width="5"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Border>
+
+            </Grid>
+        </Border>
+
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="300"/>
+            </Grid.ColumnDefinitions>
+            <DataGrid  Margin="5" ItemsSource="{Binding OrderList}" Style="{StaticResource  MaterialDesignDataGrid}" Background="White" ColumnHeaderStyle="{StaticResource MaterialDesignDataGridColumnHeader}" CellStyle="{StaticResource MaterialDesignDataGridCell}" AutoGenerateColumns="False" IsReadOnly="True" >
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="SN" Binding="{ Binding Path = SN}"/>
+                    <DataGridTextColumn Header="配方" Binding="{ Binding Path = SolventInfo}"/>
+                    <DataGridTextColumn Header="视觉" Binding="{ Binding Path = PlateCaveId}"/>
+                    <DataGridTextColumn Header="结合力" Binding="{ Binding Path = PlateCaveId}"/>
+                </DataGrid.Columns>
+            </DataGrid>
+
+            <ListBox Margin="5" Grid.Column="1"  ItemsSource="{Binding LogItem}"/>
+        </Grid>
+
+        <Grid Grid.Row="3">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="7*"/>
+                <RowDefinition Height="8*"/>
+            </Grid.RowDefinitions>
+            <StackPanel Orientation="Horizontal" Grid.RowSpan="2">
+                <StackPanel Width="100" Orientation="Vertical" Margin="6,10,0,0">
+                    <Label Content="MODE:" HorizontalAlignment="Center" Width="50" Margin="0"/>
+                    <ComboBox Grid.Row="1" HorizontalAlignment="Left" SelectedIndex="{Binding ComboxSelectedIndex}" Style="{DynamicResource MaterialDesignComboBox}">
+                        <ComboBoxItem IsSelected="True">HAND MODE</ComboBoxItem>
+                        <ComboBoxItem>AI MODE</ComboBoxItem>
+                    </ComboBox>
+                </StackPanel>
+                <Button Height="40" Width="100" Content="回原点"   Command="{Binding HomeCommand}"/>
+                <Button Height="40" Width="100" Content="镀槽启动" Command="{Binding TankStartCommand}"/>
+                <Button Height="40" Width="100" Content="镀槽停止" Command="{Binding TankStopCommand}" Foreground="Red"/>
+                <Button Height="40" Width="100" Content="流程启动" Command="{Binding ProcessStartCommand}"/>
+                <Button Height="40" Width="100" Content="流程停止" Command="{Binding ProcessStopCommand}" Foreground="Red"/>
+                <Button Height="40" Width="100" Content="排液启动" Command="{Binding TankStartDrainCommand}"/>
+                <Button Height="40" Width="100" Content="排液停止" Command="{Binding TankStopDrainCommand}" Foreground="Red"/>
+            </StackPanel>
+        </Grid>
+
+    </Grid>
+</UserControl>

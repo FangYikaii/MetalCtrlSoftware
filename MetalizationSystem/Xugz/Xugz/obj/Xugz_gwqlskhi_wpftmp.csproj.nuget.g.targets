@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Condition=" '$(TargetFramework)' == 'net6.0-windows' AND '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)system.io.ports\9.0.0\buildTransitive\netcoreapp2.0\System.IO.Ports.targets" Condition="Exists('$(NuGetPackageRoot)system.io.ports\9.0.0\buildTransitive\netcoreapp2.0\System.IO.Ports.targets')" />
+    <Import Project="$(NuGetPackageRoot)system.io.packaging\9.0.0\buildTransitive\netcoreapp2.0\System.IO.Packaging.targets" Condition="Exists('$(NuGetPackageRoot)system.io.packaging\9.0.0\buildTransitive\netcoreapp2.0\System.IO.Packaging.targets')" />
+    <Import Project="$(NuGetPackageRoot)system.drawing.common\9.0.0\buildTransitive\netcoreapp2.0\System.Drawing.Common.targets" Condition="Exists('$(NuGetPackageRoot)system.drawing.common\9.0.0\buildTransitive\netcoreapp2.0\System.Drawing.Common.targets')" />
+  </ImportGroup>
+</Project>

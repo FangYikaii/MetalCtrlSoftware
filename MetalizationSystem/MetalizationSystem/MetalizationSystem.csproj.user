@@ -1,0 +1,406 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Views\Pages\DataList.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Pages\GlassPalletCheckWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Pages\IOMonitor.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Pages\OrderEditing.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Pages\ParameterList.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Pages\ProductionProcess.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Pages\StationDebugging.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Tank40Prompt.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\UC\Axis7Uc.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\UC\DryBox_UC.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\UC\GlassPallet.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\UC\IoInputLab.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\UC\IoInputUc.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\UC\IoOutputBtn.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\UC\IoOutputUc.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Pages\XHome.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\UC\LinearMotor_UC.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\UC\LiquidDispensing_UC.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\UC\Plate_UC.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\UC\ReactionTank_UC.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\UC\RobotUc.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\UC\ToolTip_UC.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\UserManagement.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\XMessageBox.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Demo\Buttons.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Demo\Cards.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Demo\Chips.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Demo\ColorTool.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Demo\ColorZones.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Demo\ComboBoxes.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Demo\DataGrids.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Demo\Dialogs.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Demo\Domain\DocumentationLinks.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Demo\Domain\Sample4Dialog.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Demo\Domain\SampleDialog.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Demo\Domain\SampleMessageDialog.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Demo\Domain\SampleProgressDialog.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Demo\Drawers.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Demo\Elevation.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Demo\Expander.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Demo\Fields.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Demo\FieldsLineUp.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Demo\GroupBoxes.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Demo\Home.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Demo\IconPack.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Demo\Lists.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Demo\MenusAndToolBars.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Demo\NavigationRail.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Demo\NumericUpDown.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Demo\Palette.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Demo\PaletteSelector.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Demo\Pickers.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Demo\PopupBox.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Demo\Progress.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Demo\RatingBar.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Demo\Sliders.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Demo\SmartHint.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Demo\Snackbars.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Demo\Tabs.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Demo\ThemeSettings.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Demo\Toggles.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Demo\Transitions.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Demo\TransitionsDemo\Slide1_Intro.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Demo\TransitionsDemo\Slide2_Intro.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Demo\TransitionsDemo\Slide3_Intro.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Demo\TransitionsDemo\Slide4_CombineTransitions.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Demo\TransitionsDemo\Slide5_TransitioningContent.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Demo\TransitionsDemo\Slide6_Origins.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Demo\TransitionsDemo\Slide7_MVVM.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Demo\TransitionsDemo\Slide8_Details.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Demo\TransitionsDemo\TransitionsDemoHome.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Demo\Trees.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Demo\Typography.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Style\ButtonStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Style\CalendarStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Style\CheckBoxStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Style\ColorStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Style\ComboBoxStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Style\ContextMenuStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Style\DataGridStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Style\DatePickerStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Style\DocumentViewerStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Style\ExpanderStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Style\FrameStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Style\GroupBoxStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Style\LabelStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Style\ListBoxStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Style\ListViewStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Style\MenuStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Style\NavigationWindowStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Style\PasswordBoxStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Style\ProgressBarStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Style\RadioButtonStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Style\RepeatButtonStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Style\ScrollBarStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Style\ScrollViewerStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Style\SliderStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Style\StatusBarStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Style\TabControlStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Style\TextBlockStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Style\TextBoxStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Style\ThumbStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Style\ToggleButtonStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Style\ToolBarStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Style\ToolTipStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Style\TreeViewStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Style\WindowStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Pages\DataList.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Pages\GlassPalletCheckWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Pages\IOMonitor.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Pages\OrderEditing.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Pages\ParameterList.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Pages\ProductionProcess.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Pages\StationDebugging.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\UC\Axis7Uc.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\UC\DryBox_UC.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\UC\GlassPallet.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\UC\IoInputLab.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\UC\IoInputUc.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\UC\IoOutputBtn.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\UC\IoOutputUc.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Pages\XHome.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\UC\LinearMotor_UC.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\UC\LiquidDispensing_UC.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\UC\Plate_UC.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\UC\ReactionTank_UC.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\UC\RobotUc.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\UC\ToolTip_UC.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\UserManagement.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\XMessageBox.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

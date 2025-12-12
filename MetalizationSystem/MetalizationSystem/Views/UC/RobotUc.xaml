@@ -1,0 +1,239 @@
+﻿<UserControl x:Class="MetalizationSystem.Views.UC.RobotUc"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MetalizationSystem.Views.UC"
+             xmlns:domain="clr-namespace:MetalizationSystem.Domain" 
+             xmlns:local1="clr-namespace:MetalizationSystem.Behaviours"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.Resources>
+        <local1:BooleanToEnabledConverter x:Key="BooleanToEnabledConverter"/>
+    </UserControl.Resources>
+    <StackPanel>
+        <TabControl>
+            <TabItem Header="控制">
+                <StackPanel Orientation="Horizontal">
+                    <StackPanel>
+                        <Grid Width="180" Height="225">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+                            <Button x:Name="btnXn" Grid.Row="1" Style="{DynamicResource RoundedCornerButton}" Width="40" Height="40" Click="btnAxis_Click" Tag="X-">
+                                <Button.Content>
+                                    <Grid>
+                                        <Image Source="\Resources\X-.png" Width="40" Height="40"/>
+                                        <TextBlock Text="X-" HorizontalAlignment="Center" />
+                                    </Grid>
+                                </Button.Content>
+                            </Button>
+                            <Button x:Name="btnXp" Grid.Row="1" Grid.Column="2" Style="{DynamicResource RoundedCornerButton}" Width="40" Height="40" Click="btnAxis_Click" Tag="X+">
+                                <Button.Content>
+                                    <Grid>
+                                        <Image Source="\Resources\X+.png" Width="40" Height="40"/>
+                                        <TextBlock Text="X+" HorizontalAlignment="Center" />
+                                    </Grid>
+                                </Button.Content>
+                            </Button>
+                            <Button x:Name="btnYp" Grid.Row="0" Grid.Column="1" Style="{DynamicResource RoundedCornerButton}" Width="40" Height="40" Click="btnAxis_Click" Tag="Y+">
+                                <Button.Content>
+                                    <Grid>
+                                        <Image Source="\Resources\Y+.png" Width="40" Height="40"/>
+                                        <TextBlock Text="Y+" HorizontalAlignment="Center" />
+                                    </Grid>
+                                </Button.Content>
+                            </Button>
+                            <Button x:Name="btnYn" Grid.Row="2" Grid.Column="1" Style="{DynamicResource RoundedCornerButton}" Width="40" Height="40" Click="btnAxis_Click" Tag="Y-">
+                                <Button.Content>
+                                    <Grid>
+                                        <Image Source="\Resources\Y-.png" Width="40" Height="40"/>
+                                        <TextBlock Text="Y-" HorizontalAlignment="Center" />
+                                    </Grid>
+                                </Button.Content>
+                            </Button>
+                            <Button x:Name="btnZp" Grid.Row="0" Grid.Column="4" Style="{DynamicResource RoundedCornerButton}" Width="40" Height="40" Click="btnAxis_Click" Tag="Z+">
+                                <Button.Content>
+                                    <Grid>
+                                        <Image Source="\Resources\Y+.png" Width="40" Height="40"/>
+                                        <TextBlock Text="Z+" HorizontalAlignment="Center" />
+                                    </Grid>
+                                </Button.Content>
+                            </Button>
+                            <Button x:Name="btnZn" Grid.Row="2" Grid.Column="4" Style="{DynamicResource RoundedCornerButton}" Width="40" Height="40" Click="btnAxis_Click" Tag="Z-">
+                                <Button.Content>
+                                    <Grid>
+                                        <Image Source="\Resources\Y-.png" Width="40" Height="40"/>
+                                        <TextBlock Text="Z-" HorizontalAlignment="Center" />
+                                    </Grid>
+                                </Button.Content>
+                            </Button>
+                            <Grid Grid.Row="3" Grid.RowSpan="2" Grid.ColumnSpan="4">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition/>
+                                    <RowDefinition/>
+                                </Grid.RowDefinitions>
+                                <Button x:Name="btnUp" Grid.Row="0" Grid.Column="0" Style="{DynamicResource RoundedCornerButton}" Width="40" Height="40" Click="btnAxis_Click" Tag="U-">
+                                    <Button.Content>
+                                        <Grid>
+                                            <Image Source="\Resources\U-.png" Width="40" Height="40"/>
+                                            <TextBlock Text="U-" HorizontalAlignment="Center" />
+                                        </Grid>
+                                    </Button.Content>
+                                </Button>
+                                <Button x:Name="btnUn" Grid.Row="1" Grid.Column="0" Style="{DynamicResource RoundedCornerButton}" Width="40" Height="40" Click="btnAxis_Click" Tag="U+">
+                                    <Button.Content>
+                                        <Grid>
+                                            <Image Source="\Resources\U+.png" Width="40" Height="40"/>
+                                            <TextBlock Text="U+" HorizontalAlignment="Center" />
+                                        </Grid>
+                                    </Button.Content>
+                                </Button>
+                                <Button x:Name="btnVp" Grid.Row="0" Grid.Column="1" Style="{DynamicResource RoundedCornerButton}" Width="40" Height="40" Click="btnAxis_Click" Tag="V-">
+                                    <Button.Content>
+                                        <Grid>
+                                            <Image Source="\Resources\V-.png" Width="40" Height="40"/>
+                                            <TextBlock Text="V-" HorizontalAlignment="Center" />
+                                        </Grid>
+                                    </Button.Content>
+                                </Button>
+                                <Button x:Name="btnVn" Grid.Row="1" Grid.Column="1" Style="{DynamicResource RoundedCornerButton}" Width="40" Height="40" Click="btnAxis_Click" Tag="V+">
+                                    <Button.Content>
+                                        <Grid>
+                                            <Image Source="\Resources\V+.png" Width="40" Height="40"/>
+                                            <TextBlock Text="V+" HorizontalAlignment="Center" />
+                                        </Grid>
+                                    </Button.Content>
+                                </Button>
+                                <Button x:Name="btnWp" Grid.Row="0" Grid.Column="2" Style="{DynamicResource RoundedCornerButtonImageText}" Width="40" Height="40" Click="btnAxis_Click" Tag="W-">
+                                    <Button.Content>
+                                        <Grid>
+                                            <Image Source="\Resources\W-.png" Width="40" Height="40"/>
+                                            <TextBlock Text="W+" HorizontalAlignment="Center" />
+                                        </Grid>
+                                    </Button.Content>
+                                </Button>
+                                <Button x:Name="btnWn" Grid.Row="1" Grid.Column="2" Style="{DynamicResource RoundedCornerButton}" Width="40" Height="40" Click="btnAxis_Click" Tag="W+">
+                                    <Button.Content>
+                                        <Grid>
+                                            <Image Source="\Resources\W+.png" Width="40" Height="40"/>
+                                            <TextBlock Text="W+" HorizontalAlignment="Center" />
+                                        </Grid>
+                                    </Button.Content>
+                                </Button>
+                            </Grid>
+                        </Grid>
+                        <StackPanel Height="20"/>
+                        <StackPanel Orientation="Horizontal">
+                            <StackPanel Width="40">
+                                <Label x:Name="labStatusPermissions" Style="{DynamicResource roundStyle}" Width="20" Height="20" Background="Green" HorizontalAlignment="Center"/>
+                                <Label Grid.Row="1"  Content="操作权" HorizontalAlignment="Center"/>
+                            </StackPanel>
+                            <StackPanel Width="5"/>
+                            <StackPanel Width="40">
+                                <Label x:Name="labStatusSvon" Style="{DynamicResource roundStyle}" Width="20" Height="20" Background="Green" HorizontalAlignment="Center"/>
+                                <Label Grid.Row="1"  Content="使能" HorizontalAlignment="Center"/>
+                            </StackPanel>
+                            <StackPanel Width="40">
+                                <Label x:Name="labStatusAlarm" Style="{DynamicResource roundStyle}" Width="20" Height="20" Background="Green" HorizontalAlignment="Center"/>
+                                <Label Grid.Row="1"  Content="报警" HorizontalAlignment="Center"/>
+                            </StackPanel>
+                            <StackPanel Width="40">
+                                <Label x:Name="labStatusRunning" Style="{DynamicResource roundStyle}" Width="20" Height="20" Background="Green" HorizontalAlignment="Center"/>
+                                <Label Grid.Row="1"  Content="运行中" HorizontalAlignment="Center"/>
+                            </StackPanel>                      
+                        </StackPanel>
+                    </StackPanel>
+                    
+                    <StackPanel Width="20"/>
+                    <StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <StackPanel>
+                                <Button x:Name="btnStart" Margin="5"  Content="启动" Style="{DynamicResource RoundedCornerButton}" Click="btnConn_Click" Tag="启动"/>
+                                <Button x:Name="btnStop" Margin="5"  Content="停止" Style="{DynamicResource RoundedCornerButton}" Click="btnConn_Click" Tag="停止"/>
+                                <Button x:Name="btnPermissions" Margin="5"  Content="操作权" Style="{DynamicResource RoundedCornerButton}" Click="btnConn_Click" Tag="操作权"/>
+                                <Button x:Name="btnAlarmReset" Margin="5"  Content="报警复位" Style="{DynamicResource RoundedCornerButton}" Click="btnConn_Click" Tag="报警复位"/>
+                                <Button x:Name="btnProgramReset" Margin="5"  Content="程序复位" Style="{DynamicResource RoundedCornerButton}" Click="btnConn_Click" Tag="程序复位"/>
+                            </StackPanel>
+                            <StackPanel>
+                                <StackPanel Margin="5" Orientation="Horizontal">
+                                    <Label Content="X:"/>
+                                    <Label x:Name="labXpos"/>
+                                </StackPanel>
+                                <StackPanel Margin="5" Orientation="Horizontal">
+                                    <Label Content="Y:"/>
+                                    <Label x:Name="labYpos"/>
+                                </StackPanel>
+                                <StackPanel Margin="5" Orientation="Horizontal">
+                                    <Label Content="Z:"/>
+                                    <Label x:Name="labZpos"/>
+                                </StackPanel>
+                                <StackPanel Margin="5" Orientation="Horizontal">
+                                    <Label Content="U:"/>
+                                    <Label x:Name="labUpos"/>
+                                </StackPanel>
+                                <StackPanel Margin="5" Orientation="Horizontal">
+                                    <Label Content="V:"/>
+                                    <Label x:Name="labVpos"/>
+                                </StackPanel>
+                                <StackPanel Margin="5" Orientation="Horizontal">
+                                    <Label Content="W:"/>
+                                    <Label x:Name="labWpos"/>
+                                </StackPanel>
+                            </StackPanel>
+                        </StackPanel>
+                        <Button x:Name="btnGetPos" Margin="5" Content="获取当前位置" Style="{DynamicResource RoundedCornerButton}"  Click="btnConn_Click" Tag="获取当前位置"/>
+                        <StackPanel Orientation="Horizontal" >
+                            <ComboBox x:Name="cboxPos" Style="{DynamicResource MaterialDesignComboBox}" Width="100" SelectedIndex="0"/>
+                            <StackPanel Width="10"/>
+                            <ComboBox x:Name="cboxPlate" Style="{DynamicResource MaterialDesignComboBox}" SelectedIndex="0"/>
+                        </StackPanel>
+                        <StackPanel Height="10"/>
+                        <StackPanel Margin="5" Orientation="Horizontal">
+                            <Label Margin="5" Content="Speed "/>
+                            <ComboBox x:Name="cboxSpeedPre" Style="{DynamicResource MaterialDesignComboBox}" SelectedIndex="0" >
+                                <ComboBoxItem Content="10"/>
+                                <ComboBoxItem Content="20"/>
+                                <ComboBoxItem Content="50"/>
+                                <ComboBoxItem Content="60"/>
+                                <ComboBoxItem Content="70"/>
+                                <ComboBoxItem Content="80"/>
+                                <ComboBoxItem Content="90"/>
+                                <ComboBoxItem Content="100"/>
+                            </ComboBox>
+                           
+                            <Label Margin="5" Content="% "/>
+                            <TextBox x:Name="txtSpeedDistance" Text="1"/>
+                            <Label Margin="5" Content="mm"/>
+                        </StackPanel>
+                        <StackPanel Height="10"/>
+                        <StackPanel Orientation="Horizontal">
+                            <CheckBox x:Name="cboxAllowSave" Content="允许" Style="{DynamicResource MaterialDesignCheckBox }"/>
+                            <StackPanel Width="20"/>
+                            <Button x:Name="btnSavePos" Style="{DynamicResource RoundedCornerButton}" Content="保存"  Click="btnConn_Click" Tag="保存" IsEnabled="{Binding IsChecked, ElementName=cboxAllowSave, Converter={StaticResource BooleanToEnabledConverter}}" />
+                        </StackPanel>
+                      
+                    </StackPanel>     
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="点位">
+                <DataGrid x:Name="dgPos" AutoGenerateColumns="True" />                
+            </TabItem>
+        </TabControl>
+    </StackPanel>
+</UserControl>

@@ -1,0 +1,129 @@
+﻿<UserControl x:Class="MetalizationSystem.Views.UC.LiquidDispensing_UC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MetalizationSystem.Views.UC"
+             mc:Ignorable="d" 
+             d:DesignHeight="150" d:DesignWidth="85">
+    <Border  Background="Gray" BorderBrush="Black" BorderThickness="1" CornerRadius="1" MouseLeftButtonDown="Border_MouseLeftButtonDown">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+           
+            <StackPanel>
+                <StackPanel Height="5"/>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid>
+                        <Label Style="{StaticResource roundStyle}" Background="White" Width="15" Height="15"/>
+                        <Label Style="{StaticResource roundStyle}" Background="Red" Width="10" Height="10"/>
+                        <Label Style="{StaticResource roundStyle}" Background="Black" Width="9" Height="9"/>
+                        <Label Style="{StaticResource roundStyle}" Background="Red" Width="8" Height="8"/>
+                    </Grid>
+                    <Grid Grid.Column="1">
+                        <Label Style="{StaticResource roundStyle}" Background="White" Width="15" Height="15"/>
+                        <Label Style="{StaticResource roundStyle}" Background="Red" Width="10" Height="10"/>
+                        <Label Style="{StaticResource roundStyle}" Background="Black" Width="9" Height="9"/>
+                        <Label Style="{StaticResource roundStyle}" Background="Red" Width="8" Height="8"/>
+                    </Grid>
+                    <Grid Grid.Column="2">
+                        <Label Style="{StaticResource roundStyle}" Background="White" Width="15" Height="15"/>
+                        <Label Style="{StaticResource roundStyle}" Background="Red" Width="10" Height="10"/>
+                        <Label Style="{StaticResource roundStyle}" Background="Black" Width="9" Height="9"/>
+                        <Label Style="{StaticResource roundStyle}" Background="Red" Width="8" Height="8"/>
+                    </Grid>
+                    <Grid Grid.Column="3">
+                        <Label Style="{StaticResource roundStyle}" Background="White" Width="15" Height="15"/>
+                        <Label Style="{StaticResource roundStyle}" Background="Red" Width="10" Height="10"/>
+                        <Label Style="{StaticResource roundStyle}" Background="Black" Width="9" Height="9"/>
+                        <Label Style="{StaticResource roundStyle}" Background="Red" Width="8" Height="8"/>
+                    </Grid>
+                </Grid>
+                <StackPanel Height="5"/>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid>
+                        <Label Style="{StaticResource roundStyle}" Background="White" Width="15" Height="15"/>
+                        <Label Style="{StaticResource roundStyle}" Background="Red" Width="10" Height="10"/>
+                        <Label Style="{StaticResource roundStyle}" Background="Black" Width="9" Height="9"/>
+                        <Label Style="{StaticResource roundStyle}" Background="Red" Width="8" Height="8"/>
+                    </Grid>
+                    <Grid Grid.Column="1">
+                        <Label Style="{StaticResource roundStyle}" Background="White" Width="15" Height="15"/>
+                        <Label Style="{StaticResource roundStyle}" Background="Red" Width="10" Height="10"/>
+                        <Label Style="{StaticResource roundStyle}" Background="Black" Width="9" Height="9"/>
+                        <Label Style="{StaticResource roundStyle}" Background="Red" Width="8" Height="8"/>
+                    </Grid>
+                    <Grid Grid.Column="2">
+                        <Label Style="{StaticResource roundStyle}" Background="White" Width="15" Height="15"/>
+                        <Label Style="{StaticResource roundStyle}" Background="Red" Width="10" Height="10"/>
+                        <Label Style="{StaticResource roundStyle}" Background="Black" Width="9" Height="9"/>
+                        <Label Style="{StaticResource roundStyle}" Background="Red" Width="8" Height="8"/>
+                    </Grid>
+                    <Grid Grid.Column="3">
+                        <Label Style="{StaticResource roundStyle}" Background="White" Width="15" Height="15"/>
+                        <Label Style="{StaticResource roundStyle}" Background="Red" Width="10" Height="10"/>
+                        <Label Style="{StaticResource roundStyle}" Background="Black" Width="9" Height="9"/>
+                        <Label Style="{StaticResource roundStyle}" Background="Red" Width="8" Height="8"/>
+                    </Grid>
+                    <Grid Grid.Column="4">
+                        <Label Style="{StaticResource roundStyle}" Background="White" Width="15" Height="15"/>
+                        <Label Style="{StaticResource roundStyle}" Background="Red" Width="10" Height="10"/>
+                        <Label Style="{StaticResource roundStyle}" Background="Black" Width="9" Height="9"/>
+                        <Label Style="{StaticResource roundStyle}" Background="Red" Width="8" Height="8"/>
+                    </Grid>
+                </Grid>
+            </StackPanel>
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>                
+                <Grid>
+                    <Label Style="{DynamicResource MaterialDesignLabel}" Width="5" Height="5" Background="LightGray" VerticalAlignment="Top"/>
+                    <Label Style="{DynamicResource MaterialDesignLabel}" Margin="5" Width="10" Height="5" Background="White" VerticalAlignment="Top"/>
+                    <Label Style="{DynamicResource MaterialDesignLabel}" Margin="6" Width="8" Height="10" Background="Gray" VerticalAlignment="Top"/>
+                    <Label Style="{DynamicResource MaterialDesignLabel}" Margin="8"  Width="3" Height="6" Background="White" VerticalAlignment="Top"/>
+                    <Label Style="{DynamicResource MaterialDesignLabel}" Margin="0,15"  Width="8" Height="6" Background="White" VerticalAlignment="Top"/>
+                </Grid>
+                <Grid Grid.Column="1">
+                    <Label Style="{DynamicResource MaterialDesignLabel}" Width="5" Height="5" Background="LightGray" VerticalAlignment="Top"/>
+                    <Label Style="{DynamicResource MaterialDesignLabel}" Margin="5" Width="10" Height="5" Background="White" VerticalAlignment="Top"/>
+                    <Label Style="{DynamicResource MaterialDesignLabel}" Margin="6" Width="8" Height="10" Background="Gray" VerticalAlignment="Top"/>
+                    <Label Style="{DynamicResource MaterialDesignLabel}" Margin="8"  Width="3" Height="6" Background="White" VerticalAlignment="Top"/>
+                    <Label Style="{DynamicResource MaterialDesignLabel}" Margin="0,15"  Width="8" Height="6" Background="White" VerticalAlignment="Top"/>
+                </Grid>
+                <Grid Grid.Column="2">
+                    <Label Style="{DynamicResource MaterialDesignLabel}" Width="5" Height="5" Background="LightGray" VerticalAlignment="Top"/>
+                    <Label Style="{DynamicResource MaterialDesignLabel}" Margin="5" Width="10" Height="5" Background="White" VerticalAlignment="Top"/>
+                    <Label Style="{DynamicResource MaterialDesignLabel}" Margin="6" Width="8" Height="10" Background="Gray" VerticalAlignment="Top"/>
+                    <Label Style="{DynamicResource MaterialDesignLabel}" Margin="8"  Width="3" Height="6" Background="White" VerticalAlignment="Top"/>
+                    <Label Style="{DynamicResource MaterialDesignLabel}" Margin="0,15"  Width="8" Height="6" Background="White" VerticalAlignment="Top"/>
+                </Grid>
+            </Grid>
+            <Grid Grid.Row="2">
+                <Label Style="{StaticResource roundStyle}" Background="White" Width="25" Height="25"/>
+                <Label Style="{StaticResource roundStyle}" Background="Red" Width="15" Height="15"/>
+                <Label Style="{StaticResource roundStyle}" Background="Black" Width="14" Height="14"/>
+                <Label Style="{StaticResource roundStyle}" Background="Red" Width="12" Height="12"/>
+            </Grid>
+        </Grid>
+    </Border>
+</UserControl>
