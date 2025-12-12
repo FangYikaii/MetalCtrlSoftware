@@ -22,6 +22,9 @@ namespace MetalizationSystem.Views.UC
     public class AdensionData
     {
         public int expID { get; set; } = 0;
+        public string projName { get; set; } = "";
+        public int iterId { get; set; } = 0;
+        public string phase { get; set; } = "";
         public double Adhension { get; set; } = 0.0;
         public double Coverage { get; set; } = 0.0;
         public double Uniformity { get; set; } = 0.0;
@@ -71,10 +74,14 @@ namespace MetalizationSystem.Views.UC
             try
             {
                 AdensionData value = new AdensionData();
-                value.expID = int.Parse((DataContext as ExpDataViewModel).ExpId.Trim());
+                var viewModel = DataContext as ExpDataViewModel;
+                value.expID = int.Parse(viewModel.ExpId.Trim());
+                value.projName = viewModel.ProjName;
+                value.iterId = int.Parse(viewModel.IterId.Trim());
+                value.phase = viewModel.Phase;
                 
                 // 从 TextBox 读取 Adhension 并转换为数值
-                string adhensionText = (DataContext as ExpDataViewModel).AdhensionValue?.Trim();
+                string adhensionText = viewModel.AdhensionValue?.Trim();
                 if (string.IsNullOrEmpty(adhensionText))
                 {
                     MessageBox.Show("Please enter adhension value!", "Warning", MessageBoxButton.OK, MessageBoxImage.Warning);
@@ -88,7 +95,7 @@ namespace MetalizationSystem.Views.UC
                 value.Adhension = adhensionValue;
 
                 // 从 TextBox 读取 Coverage 并转换为数值
-                string coverageText = (DataContext as ExpDataViewModel).Coverage?.Trim();
+                string coverageText = viewModel.Coverage?.Trim();
                 if (string.IsNullOrEmpty(coverageText))
                 {
                     MessageBox.Show("Please enter coverage value!", "Warning", MessageBoxButton.OK, MessageBoxImage.Warning);
@@ -102,7 +109,7 @@ namespace MetalizationSystem.Views.UC
                 value.Coverage = coverageValue;
 
                 // 从 TextBox 读取 Uniformity 并转换为数值
-                string uniformityText = (DataContext as ExpDataViewModel).Uniformity?.Trim();
+                string uniformityText = viewModel.Uniformity?.Trim();
                 if (string.IsNullOrEmpty(uniformityText))
                 {
                     MessageBox.Show("Please enter uniformity value!", "Warning", MessageBoxButton.OK, MessageBoxImage.Warning);

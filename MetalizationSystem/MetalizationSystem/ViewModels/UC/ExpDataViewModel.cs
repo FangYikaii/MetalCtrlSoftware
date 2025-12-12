@@ -40,6 +40,10 @@ public partial class ExpDataViewModel : ObservableObject
     [ObservableProperty]
     string _expId;
     [ObservableProperty]
+    string _iterId;
+    [ObservableProperty]
+    string _phase;
+    [ObservableProperty]
     string _formulaId;
     [ObservableProperty]
     string _formulaName;
@@ -77,6 +81,8 @@ public partial class ExpDataViewModel : ObservableObject
         //Update data
         ProjName = data.ProjName;
         ExpId = data.ExpID.ToString();
+        IterId = data.IterId.ToString();
+        Phase = data.Phase;
         FormulaId = data.Formula.ToString();
         BarCode = data.Barcode;
         Concentration = data.Concentration.ToString();

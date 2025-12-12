@@ -855,11 +855,20 @@ public partial class OptimizationPageViewModel : ObservableObject
     void my_AdhensionEvent(object sender, AdhensionEventArges arge)
     {
         AdensionData test = arge.value;
-        // 确保只修改当前 projName 下的对应数据
-        List<BayesExperData> list = mOperation.GetInfo<BayesExperData>(x => x.ProjName == ExistingSelectedProj.ProjName && x.IterId == ExistingSelectedProj.DownloadId && x.ExpID == test.expID);
+        // 使用 ExpID、ProjName、IterId、Phase 唯一确定一条数据
+        List<BayesExperData> list = mOperation.GetInfo<BayesExperData>(x => 
+            x.ProjName == test.projName && 
+            x.IterId == test.iterId && 
+            x.ExpID == test.expID && 
+            x.Phase == test.phase);
         if (list.Count == 0)
         {
             MessageBox.Show("Data not found!", "Warning", MessageBoxButton.OK, MessageBoxImage.Warning);
+            return;
+        }
+        if (list.Count > 1)
+        {
+            MessageBox.Show("Multiple records found! Please check data integrity.", "Warning", MessageBoxButton.OK, MessageBoxImage.Warning);
             return;
         }
         // 同时更新三个值
