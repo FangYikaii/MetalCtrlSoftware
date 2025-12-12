@@ -15,14 +15,6 @@
     <UserControl.Resources>
         <ResourceDictionary>
             <locals:ColorConvertBehavior  x:Key="colorConverter"/>
-            <!-- Style for organic columns visibility -->
-            <Style x:Key="OrganicColumnStyle" TargetType="DataGridTextColumn">
-                <Setter Property="Visibility" Value="{Binding DataContext.OrgnicVisibility, RelativeSource={RelativeSource AncestorType=DataGrid}}"/>
-            </Style>
-            <!-- Style for oxide columns visibility -->
-            <Style x:Key="OxideColumnStyle" TargetType="DataGridTextColumn">
-                <Setter Property="Visibility" Value="{Binding DataContext.OxideVisibility, RelativeSource={RelativeSource AncestorType=DataGrid}}"/>
-            </Style>
         </ResourceDictionary>
     </UserControl.Resources>
     <Grid>
