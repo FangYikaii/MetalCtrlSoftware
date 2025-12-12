@@ -968,10 +968,21 @@ public partial class OptimizationPageViewModel : ObservableObject
 
                     // 加载实验数据
                     BayesExperDataList.Clear();
+                    // Python脚本生成的数据的IterId字段等于传入的iterId参数（即ExistingSelectedProj.IterId）
+                    // 下载后DownloadId++，此时DownloadId==IterId，所以使用DownloadId查询
                     List<BayesExperData> list = mOperation.GetInfo<BayesExperData>(x => x.ProjName == ExistingSelectedProj.ProjName && x.IterId == ExistingSelectedProj.DownloadId);
                     foreach (var item in list)
                     {
                         BayesExperDataList.Add(item);
+                    }
+                    // 如果查询结果为空，可能是数据还未写入，尝试使用IterId查询
+                    if (list.Count == 0)
+                    {
+                        list = mOperation.GetInfo<BayesExperData>(x => x.ProjName == ExistingSelectedProj.ProjName && x.IterId == ExistingSelectedProj.IterId);
+                        foreach (var item in list)
+                        {
+                            BayesExperDataList.Add(item);
+                        }
                     }
                     UpdateColumnVisibility();
 
