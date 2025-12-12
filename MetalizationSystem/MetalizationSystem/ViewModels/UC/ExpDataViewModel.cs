@@ -58,7 +58,7 @@ public partial class ExpDataViewModel : ObservableObject
     [ObservableProperty]
     string _uniformity;
     [ObservableProperty]
-    int _comboxSelectedIndex;
+    string _adhensionValue;
     [ObservableProperty]
     string _createTime;
     [ObservableProperty]
@@ -83,6 +83,8 @@ public partial class ExpDataViewModel : ObservableObject
         Temperature = data.Temperature.ToString();
         SoakTime = data.SoakTime.ToString();
         PH = data.PH.ToString();
+        // 初始化 AdhensionValue，如果已有值则显示数值，否则默认为空
+        AdhensionValue = data.Adhesion != 0.0 ? data.Adhesion.ToString() : "";
 
         mOperation = new CommonDbOperation(new CommonDbConnectionInfo()
         {

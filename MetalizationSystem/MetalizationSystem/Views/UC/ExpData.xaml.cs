@@ -22,7 +22,7 @@ namespace MetalizationSystem.Views.UC
     public class AdensionData
     {
         public int expID { get; set; } = 0;
-        public bool Adhension { get; set; } = false;
+        public double Adhension { get; set; } = 0.0;
     }
 
     public class AdhensionEventArges : EventArgs
@@ -44,7 +44,7 @@ namespace MetalizationSystem.Views.UC
         public event AdhensionEventHandler AdhensionEvent;
         protected virtual void OnAdhensionEvent(AdhensionEventArges e)
         {
-            if (OnAdhensionEvent != null)
+            if (AdhensionEvent != null)
             {
                 AdhensionEvent(this, e);
             }
@@ -68,14 +68,20 @@ namespace MetalizationSystem.Views.UC
             {
                 AdensionData value = new AdensionData();
                 value.expID = int.Parse((DataContext as ExpDataViewModel).ExpId.Trim());
-                if ((DataContext as ExpDataViewModel).ComboxSelectedIndex == 0)
+                // 从 TextBox 读取文本并转换为数值
+                string adhensionText = (DataContext as ExpDataViewModel).AdhensionValue?.Trim();
+                if (string.IsNullOrEmpty(adhensionText))
                 {
-                    value.Adhension = true;
+                    MessageBox.Show("Please enter adhension value!", "Warning", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    return;
                 }
-                else
+                // 尝试解析为数值
+                if (!double.TryParse(adhensionText, out double adhensionValue))
                 {
-                    value.Adhension = false;
+                    MessageBox.Show("Please enter a valid numeric value for adhension!", "Warning", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    return;
                 }
+                value.Adhension = adhensionValue;
                 OnAdhensionEvent(new AdhensionEventArges(value));
             }
             catch (Exception ex)

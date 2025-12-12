@@ -34,7 +34,7 @@ namespace MetalizationSystem.DataCollection
         public double MetalMolarRatio { get; set; } = 0.0;
         public double Coverage { get; set; } = 0.0;
         public double Uniformity { get; set; } = 0.0;
-        public bool Adhesion { get; set; } = false;
+        public double Adhesion { get; set; } = 0.0;
         public bool IsRunning { get; set; } = false;
         public bool DataCheck { get; set; } = false;
         public string Barcode { get; set; }
