@@ -3,16 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\34236\\Desktop\\\u91D1\u5C5E\u5316\\C#\\MetalizationSystem 1212\\MetalizationSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{65A500D2-7F26-4BB8-A0D4-1EB77C2C90A5}|MetalizationSystem\\MetalizationSystem.csproj|c:\\users\\34236\\desktop\\\u91D1\u5C5E\u5316\\c#\\metalizationsystem 1212\\metalizationsystem\\metalizationsystem\\views\\pages\\optimizationpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{65A500D2-7F26-4BB8-A0D4-1EB77C2C90A5}|MetalizationSystem\\MetalizationSystem.csproj|solutionrelative:metalizationsystem\\views\\pages\\optimizationpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{65A500D2-7F26-4BB8-A0D4-1EB77C2C90A5}|MetalizationSystem\\MetalizationSystem.csproj|c:\\users\\34236\\desktop\\\u91D1\u5C5E\u5316\\c#\\metalizationsystem 1212\\metalizationsystem\\metalizationsystem\\viewmodels\\pages\\optimizationpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65A500D2-7F26-4BB8-A0D4-1EB77C2C90A5}|MetalizationSystem\\MetalizationSystem.csproj|solutionrelative:metalizationsystem\\viewmodels\\pages\\optimizationpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{65A500D2-7F26-4BB8-A0D4-1EB77C2C90A5}|MetalizationSystem\\MetalizationSystem.csproj|c:\\users\\34236\\desktop\\\u91D1\u5C5E\u5316\\c#\\metalizationsystem 1212\\metalizationsystem\\metalizationsystem\\datacollection\\bayesexperdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{65A500D2-7F26-4BB8-A0D4-1EB77C2C90A5}|MetalizationSystem\\MetalizationSystem.csproj|solutionrelative:metalizationsystem\\datacollection\\bayesexperdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{65A500D2-7F26-4BB8-A0D4-1EB77C2C90A5}|MetalizationSystem\\MetalizationSystem.csproj|c:\\users\\34236\\desktop\\\u91D1\u5C5E\u5316\\c#\\metalizationsystem 1212\\metalizationsystem\\metalizationsystem\\viewmodels\\pages\\optimizationpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{65A500D2-7F26-4BB8-A0D4-1EB77C2C90A5}|MetalizationSystem\\MetalizationSystem.csproj|solutionrelative:metalizationsystem\\viewmodels\\pages\\optimizationpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{62EFF935-E09E-4A7C-BE19-BCF15D45980C}|DbOperationLibrary\\DbOperationLibrary.csproj|C:\\Users\\34236\\Desktop\\\u91D1\u5C5E\u5316\\C#\\MetalizationSystem 1212\\MetalizationSystem\\dboperationlibrary\\commondboperation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62EFF935-E09E-4A7C-BE19-BCF15D45980C}|DbOperationLibrary\\DbOperationLibrary.csproj|solutionrelative:dboperationlibrary\\commondboperation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65A500D2-7F26-4BB8-A0D4-1EB77C2C90A5}|MetalizationSystem\\MetalizationSystem.csproj|c:\\users\\34236\\desktop\\\u91D1\u5C5E\u5316\\c#\\metalizationsystem 1212\\metalizationsystem\\metalizationsystem\\views\\pages\\optimizationpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65A500D2-7F26-4BB8-A0D4-1EB77C2C90A5}|MetalizationSystem\\MetalizationSystem.csproj|solutionrelative:metalizationsystem\\views\\pages\\optimizationpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65A500D2-7F26-4BB8-A0D4-1EB77C2C90A5}|MetalizationSystem\\MetalizationSystem.csproj|c:\\users\\34236\\desktop\\\u91D1\u5C5E\u5316\\c#\\metalizationsystem 1212\\metalizationsystem\\metalizationsystem\\views\\pages\\optimizationpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{65A500D2-7F26-4BB8-A0D4-1EB77C2C90A5}|MetalizationSystem\\MetalizationSystem.csproj|solutionrelative:metalizationsystem\\views\\pages\\optimizationpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65A500D2-7F26-4BB8-A0D4-1EB77C2C90A5}|MetalizationSystem\\MetalizationSystem.csproj|c:\\users\\34236\\desktop\\\u91D1\u5C5E\u5316\\c#\\metalizationsystem 1212\\metalizationsystem\\metalizationsystem\\views\\uc\\expdata.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65A500D2-7F26-4BB8-A0D4-1EB77C2C90A5}|MetalizationSystem\\MetalizationSystem.csproj|solutionrelative:metalizationsystem\\views\\uc\\expdata.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65A500D2-7F26-4BB8-A0D4-1EB77C2C90A5}|MetalizationSystem\\MetalizationSystem.csproj|c:\\users\\34236\\desktop\\\u91D1\u5C5E\u5316\\c#\\metalizationsystem 1212\\metalizationsystem\\metalizationsystem\\viewmodels\\uc\\expdataviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65A500D2-7F26-4BB8-A0D4-1EB77C2C90A5}|MetalizationSystem\\MetalizationSystem.csproj|solutionrelative:metalizationsystem\\viewmodels\\uc\\expdataviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,25 +46,72 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "OptimizationPage.xaml",
-              "DocumentMoniker": "C:\\Users\\34236\\Desktop\\\u91D1\u5C5E\u5316\\C#\\MetalizationSystem 1212\\MetalizationSystem\\MetalizationSystem\\Views\\Pages\\OptimizationPage.xaml",
-              "RelativeDocumentMoniker": "MetalizationSystem\\Views\\Pages\\OptimizationPage.xaml",
-              "ToolTip": "C:\\Users\\34236\\Desktop\\\u91D1\u5C5E\u5316\\C#\\MetalizationSystem 1212\\MetalizationSystem\\MetalizationSystem\\Views\\Pages\\OptimizationPage.xaml*",
-              "RelativeToolTip": "MetalizationSystem\\Views\\Pages\\OptimizationPage.xaml*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-12T08:17:52.634Z",
-              "EditorCaption": ""
+              "DocumentIndex": 5,
+              "Title": "ExpData.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\34236\\Desktop\\\u91D1\u5C5E\u5316\\C#\\MetalizationSystem 1212\\MetalizationSystem\\MetalizationSystem\\Views\\UC\\ExpData.xaml.cs",
+              "RelativeDocumentMoniker": "MetalizationSystem\\Views\\UC\\ExpData.xaml.cs",
+              "ToolTip": "C:\\Users\\34236\\Desktop\\\u91D1\u5C5E\u5316\\C#\\MetalizationSystem 1212\\MetalizationSystem\\MetalizationSystem\\Views\\UC\\ExpData.xaml.cs",
+              "RelativeToolTip": "MetalizationSystem\\Views\\UC\\ExpData.xaml.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAArwDIAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-12T12:52:48.689Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ExpDataViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\34236\\Desktop\\\u91D1\u5C5E\u5316\\C#\\MetalizationSystem 1212\\MetalizationSystem\\MetalizationSystem\\ViewModels\\UC\\ExpDataViewModel.cs",
+              "RelativeDocumentMoniker": "MetalizationSystem\\ViewModels\\UC\\ExpDataViewModel.cs",
+              "ToolTip": "C:\\Users\\34236\\Desktop\\\u91D1\u5C5E\u5316\\C#\\MetalizationSystem 1212\\MetalizationSystem\\MetalizationSystem\\ViewModels\\UC\\ExpDataViewModel.cs",
+              "RelativeToolTip": "MetalizationSystem\\ViewModels\\UC\\ExpDataViewModel.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAIEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-12T12:51:42.776Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "CommonDbOperation.cs",
+              "DocumentMoniker": "C:\\Users\\34236\\Desktop\\\u91D1\u5C5E\u5316\\C#\\MetalizationSystem 1212\\MetalizationSystem\\DbOperationLibrary\\CommonDbOperation.cs",
+              "RelativeDocumentMoniker": "DbOperationLibrary\\CommonDbOperation.cs",
+              "ToolTip": "C:\\Users\\34236\\Desktop\\\u91D1\u5C5E\u5316\\C#\\MetalizationSystem 1212\\MetalizationSystem\\DbOperationLibrary\\CommonDbOperation.cs",
+              "RelativeToolTip": "DbOperationLibrary\\CommonDbOperation.cs",
+              "ViewState": "AgIAAGsAAAAAAAAAAAAAAGsAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-12T12:29:24.189Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OptimizationPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\34236\\Desktop\\\u91D1\u5C5E\u5316\\C#\\MetalizationSystem 1212\\MetalizationSystem\\MetalizationSystem\\Views\\Pages\\OptimizationPage.xaml.cs",
+              "RelativeDocumentMoniker": "MetalizationSystem\\Views\\Pages\\OptimizationPage.xaml.cs",
+              "ToolTip": "C:\\Users\\34236\\Desktop\\\u91D1\u5C5E\u5316\\C#\\MetalizationSystem 1212\\MetalizationSystem\\MetalizationSystem\\Views\\Pages\\OptimizationPage.xaml.cs",
+              "RelativeToolTip": "MetalizationSystem\\Views\\Pages\\OptimizationPage.xaml.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAkAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-12T12:13:34.175Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "OptimizationPage.xaml",
+              "DocumentMoniker": "C:\\Users\\34236\\Desktop\\\u91D1\u5C5E\u5316\\C#\\MetalizationSystem 1212\\MetalizationSystem\\MetalizationSystem\\Views\\Pages\\OptimizationPage.xaml",
+              "RelativeDocumentMoniker": "MetalizationSystem\\Views\\Pages\\OptimizationPage.xaml",
+              "ToolTip": "C:\\Users\\34236\\Desktop\\\u91D1\u5C5E\u5316\\C#\\MetalizationSystem 1212\\MetalizationSystem\\MetalizationSystem\\Views\\Pages\\OptimizationPage.xaml",
+              "RelativeToolTip": "MetalizationSystem\\Views\\Pages\\OptimizationPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-12T08:17:52.634Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "OptimizationPageViewModel.cs",
               "DocumentMoniker": "C:\\Users\\34236\\Desktop\\\u91D1\u5C5E\u5316\\C#\\MetalizationSystem 1212\\MetalizationSystem\\MetalizationSystem\\ViewModels\\Pages\\OptimizationPageViewModel.cs",
               "RelativeDocumentMoniker": "MetalizationSystem\\ViewModels\\Pages\\OptimizationPageViewModel.cs",
               "ToolTip": "C:\\Users\\34236\\Desktop\\\u91D1\u5C5E\u5316\\C#\\MetalizationSystem 1212\\MetalizationSystem\\MetalizationSystem\\ViewModels\\Pages\\OptimizationPageViewModel.cs",
               "RelativeToolTip": "MetalizationSystem\\ViewModels\\Pages\\OptimizationPageViewModel.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAAO4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAL4FAAAAAAAAAAAAwMkFAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-12T08:18:44.154Z",
               "EditorCaption": ""
@@ -61,7 +124,7 @@
               "RelativeDocumentMoniker": "MetalizationSystem\\DataCollection\\BayesExperData.cs",
               "ToolTip": "C:\\Users\\34236\\Desktop\\\u91D1\u5C5E\u5316\\C#\\MetalizationSystem 1212\\MetalizationSystem\\MetalizationSystem\\DataCollection\\BayesExperData.cs",
               "RelativeToolTip": "MetalizationSystem\\DataCollection\\BayesExperData.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAUwBEAAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-12T08:18:49.706Z",
               "EditorCaption": ""

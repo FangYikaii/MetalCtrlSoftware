@@ -2142,3 +2142,4 @@ C:\Users\34236\Desktop\金属化\C#\MetalizationSystem 1212\MetalizationSystem\M
 C:\Users\34236\Desktop\金属化\C#\MetalizationSystem 1212\MetalizationSystem\MetalizationSystem\obj\Debug\net48\Metaliza.AA27F052.Up2Date
 C:\Users\34236\Desktop\金属化\C#\MetalizationSystem 1212\MetalizationSystem\MetalizationSystem\obj\Debug\net48\MetalizationSystem.exe
 C:\Users\34236\Desktop\金属化\C#\MetalizationSystem 1212\MetalizationSystem\MetalizationSystem\obj\Debug\net48\MetalizationSystem.pdb
+C:\Users\34236\Desktop\金属化\C#\MetalizationSystem 1212\MetalizationSystem\MetalizationSystem\obj\Debug\net48\MetalizationSystem.sourcelink.json
